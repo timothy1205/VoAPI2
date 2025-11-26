@@ -1,0 +1,8 @@
+json_ref_dict
+lark
+numpy
+pyOpenSSL
+Requests
+setuptools
+symspellpy
+urllib3
