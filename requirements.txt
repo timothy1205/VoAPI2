@@ -6,3 +6,8 @@ Requests
 setuptools
 symspellpy
 urllib3
+datasets
+transformers
+tokenizers
+torch
+accelerate
