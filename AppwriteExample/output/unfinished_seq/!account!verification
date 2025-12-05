@@ -1,0 +1,144 @@
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/verification
+Candidate API Method: Put
+Candidate API Seq: Post /account/verification  -->  Put /account/verification
+Failed API: Post /account/verification
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "url": [
+      "VoAPITestString33",
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/verification
+Candidate API Method: Put
+Candidate API Seq: Post /account/verification  -->  Put /account/verification
+Failed API: Post /account/verification
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "url": [
+      "VoAPITestString12",
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/verification
+Candidate API Method: Put
+Candidate API Seq: Post /account/verification  -->  Put /account/verification
+Failed API: Post /account/verification
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "url": [
+      "VoAPITestString18",
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/verification
+Candidate API Method: Put
+Candidate API Seq: Post /account/verification  -->  Put /account/verification
+Failed API: Post /account/verification
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "url": [
+      "VoAPITestString31",
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/verification
+Candidate API Method: Put
+Candidate API Seq: Post /account/verification  -->  Put /account/verification
+Failed API: Post /account/verification
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "url": [
+      "VoAPITestString4",
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/verification
+Candidate API Method: Put
+Candidate API Seq: Post /account/verification  -->  Put /account/verification
+Failed API: Post /account/verification
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "url": [
+      "VoAPITestString33",
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/verification
+Candidate API Method: Put
+Candidate API Seq: Post /account/verification  -->  Put /account/verification
+Failed API: Post /account/verification
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "url": [
+      "VoAPITestString42",
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/verification
+Candidate API Method: Put
+Candidate API Seq: Post /account/verification  -->  Put /account/verification
+Failed API: Post /account/verification
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "url": [
+      "VoAPITestString29",
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/verification
+Candidate API Method: Put
+Candidate API Seq: Post /account/verification  -->  Put /account/verification
+Failed API: Post /account/verification
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "url": [
+      "VoAPITestString21",
+      "VoAPI_RANDOM"
+    ]
+  }
+}

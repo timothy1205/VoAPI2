@@ -1,0 +1,110 @@
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/name
+Candidate API Method: Patch
+Candidate API Seq: Get /account  -->  Patch /account/name
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/name
+Candidate API Method: Patch
+Candidate API Seq: Get /account  -->  Patch /account/name
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/name
+Candidate API Method: Patch
+Candidate API Seq: Get /account  -->  Patch /account/name
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/name
+Candidate API Method: Patch
+Candidate API Seq: Get /account  -->  Patch /account/name
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/name
+Candidate API Method: Patch
+Candidate API Seq: Get /account  -->  Patch /account/name
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/name
+Candidate API Method: Patch
+Candidate API Seq: Get /account  -->  Patch /account/name
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/name
+Candidate API Method: Patch
+Candidate API Seq: Get /account  -->  Patch /account/name
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/name
+Candidate API Method: Patch
+Candidate API Seq: Get /account  -->  Patch /account/name
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/name
+Candidate API Method: Patch
+Candidate API Seq: Get /account  -->  Patch /account/name
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/name
+Candidate API Method: Patch
+Candidate API Seq: Get /account  -->  Patch /account/name
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}

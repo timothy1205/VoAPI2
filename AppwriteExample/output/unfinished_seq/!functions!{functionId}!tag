@@ -1,0 +1,400 @@
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /functions/{functionId}/tag
+Candidate API Method: Patch
+Candidate API Seq: Post /functions  -->  Put /functions/{functionId}  -->  Patch /functions/{functionId}/tag
+Failed API: Post /functions
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "events": [
+      "Array",
+      [
+        "VoAPITestString15",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "execute": [
+      "Array",
+      [
+        "VoAPITestString17",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "name": [
+      "VoAPITestString40",
+      "VoAPI_RANDOM"
+    ],
+    "runtime": [
+      "VoAPITestString9",
+      "VoAPI_RANDOM"
+    ],
+    "schedule": [
+      "VoAPITestString4",
+      "VoAPI_RANDOM"
+    ],
+    "timeout": [
+      1,
+      "VoAPI_RANDOM"
+    ],
+    "vars": [
+      {
+        "VoAPI4": false
+      },
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /functions/{functionId}/tag
+Candidate API Method: Patch
+Candidate API Seq: Post /functions  -->  Put /functions/{functionId}  -->  Patch /functions/{functionId}/tag
+Failed API: Post /functions
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "events": [
+      "Array",
+      [
+        "VoAPITestString0",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "execute": [
+      "Array",
+      [
+        "VoAPITestString42",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "name": [
+      "VoAPITestString39",
+      "VoAPI_RANDOM"
+    ],
+    "runtime": [
+      "VoAPITestString39",
+      "VoAPI_RANDOM"
+    ],
+    "schedule": [
+      "VoAPITestString40",
+      "VoAPI_RANDOM"
+    ],
+    "timeout": [
+      27,
+      "VoAPI_RANDOM"
+    ],
+    "vars": [
+      {
+        "VoAPI35": 4.75
+      },
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /functions/{functionId}/tag
+Candidate API Method: Patch
+Candidate API Seq: Post /functions  -->  Put /functions/{functionId}  -->  Patch /functions/{functionId}/tag
+Failed API: Post /functions
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "events": [
+      "Array",
+      [
+        "VoAPITestString17",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "execute": [
+      "Array",
+      [
+        "VoAPITestString10",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "name": [
+      "VoAPITestString28",
+      "VoAPI_RANDOM"
+    ],
+    "runtime": [
+      "VoAPITestString15",
+      "VoAPI_RANDOM"
+    ],
+    "schedule": [
+      "VoAPITestString4",
+      "VoAPI_RANDOM"
+    ],
+    "timeout": [
+      21,
+      "VoAPI_RANDOM"
+    ],
+    "vars": [
+      {
+        "VoAPI24": "VoAPI13"
+      },
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /functions/{functionId}/tag
+Candidate API Method: Patch
+Candidate API Seq: Post /functions  -->  Put /functions/{functionId}  -->  Patch /functions/{functionId}/tag
+Failed API: Post /functions
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "events": [
+      "Array",
+      [
+        "VoAPITestString9",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "execute": [
+      "Array",
+      [
+        "VoAPITestString29",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "name": [
+      "VoAPITestString24",
+      "VoAPI_RANDOM"
+    ],
+    "runtime": [
+      "VoAPITestString8",
+      "VoAPI_RANDOM"
+    ],
+    "schedule": [
+      "VoAPITestString19",
+      "VoAPI_RANDOM"
+    ],
+    "timeout": [
+      21,
+      "VoAPI_RANDOM"
+    ],
+    "vars": [
+      {
+        "VoAPI18": 18
+      },
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /functions/{functionId}/tag
+Candidate API Method: Patch
+Candidate API Seq: Post /functions  -->  Put /functions/{functionId}  -->  Patch /functions/{functionId}/tag
+Failed API: Post /functions
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "events": [
+      "Array",
+      [
+        "VoAPITestString15",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "execute": [
+      "Array",
+      [
+        "VoAPITestString28",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "name": [
+      "VoAPITestString22",
+      "VoAPI_RANDOM"
+    ],
+    "runtime": [
+      "VoAPITestString13",
+      "VoAPI_RANDOM"
+    ],
+    "schedule": [
+      "VoAPITestString23",
+      "VoAPI_RANDOM"
+    ],
+    "timeout": [
+      2,
+      "VoAPI_RANDOM"
+    ],
+    "vars": [
+      {
+        "VoAPI22": "VoAPI11"
+      },
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /functions/{functionId}/tag
+Candidate API Method: Patch
+Candidate API Seq: Post /functions  -->  Put /functions/{functionId}  -->  Patch /functions/{functionId}/tag
+Failed API: Post /functions
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "events": [
+      "Array",
+      [
+        "VoAPITestString36",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "execute": [
+      "Array",
+      [
+        "VoAPITestString31",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "name": [
+      "VoAPITestString23",
+      "VoAPI_RANDOM"
+    ],
+    "runtime": [
+      "VoAPITestString26",
+      "VoAPI_RANDOM"
+    ],
+    "schedule": [
+      "VoAPITestString12",
+      "VoAPI_RANDOM"
+    ],
+    "timeout": [
+      35,
+      "VoAPI_RANDOM"
+    ],
+    "vars": [
+      {
+        "VoAPI30": "VoAPI19"
+      },
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /functions/{functionId}/tag
+Candidate API Method: Patch
+Candidate API Seq: Post /functions  -->  Put /functions/{functionId}  -->  Patch /functions/{functionId}/tag
+Failed API: Post /functions
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "events": [
+      "Array",
+      [
+        "VoAPITestString3",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "execute": [
+      "Array",
+      [
+        "VoAPITestString42",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "name": [
+      "VoAPITestString12",
+      "VoAPI_RANDOM"
+    ],
+    "runtime": [
+      "VoAPITestString5",
+      "VoAPI_RANDOM"
+    ],
+    "schedule": [
+      "VoAPITestString6",
+      "VoAPI_RANDOM"
+    ],
+    "timeout": [
+      27,
+      "VoAPI_RANDOM"
+    ],
+    "vars": [
+      {
+        "VoAPI1": false
+      },
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /functions/{functionId}/tag
+Candidate API Method: Patch
+Candidate API Seq: Post /functions  -->  Put /functions/{functionId}  -->  Patch /functions/{functionId}/tag
+Failed API: Post /functions
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "events": [
+      "Array",
+      [
+        "VoAPITestString3",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "execute": [
+      "Array",
+      [
+        "VoAPITestString12",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "name": [
+      "VoAPITestString6",
+      "VoAPI_RANDOM"
+    ],
+    "runtime": [
+      "VoAPITestString24",
+      "VoAPI_RANDOM"
+    ],
+    "schedule": [
+      "VoAPITestString10",
+      "VoAPI_RANDOM"
+    ],
+    "timeout": [
+      18,
+      "VoAPI_RANDOM"
+    ],
+    "vars": [
+      {
+        "VoAPI10": false
+      },
+      "VoAPI_RANDOM"
+    ]
+  }
+}

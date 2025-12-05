@@ -1,0 +1,128 @@
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /storage/files/{fileId}/preview
+Candidate API Method: Get
+Candidate API Seq: Post /storage/files  -->  Put /storage/files/{fileId}  -->  Get /storage/files/{fileId}/preview
+Failed API: Post /storage/files
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "file": [
+      "MultiPartValue",
+      "VoAPI_SPECIFICATION"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /storage/files/{fileId}/preview
+Candidate API Method: Get
+Candidate API Seq: Post /storage/files  -->  Put /storage/files/{fileId}  -->  Get /storage/files/{fileId}/preview
+Failed API: Post /storage/files
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "file": [
+      "MultiPartValue",
+      "VoAPI_SPECIFICATION"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /storage/files/{fileId}/preview
+Candidate API Method: Get
+Candidate API Seq: Post /storage/files  -->  Put /storage/files/{fileId}  -->  Get /storage/files/{fileId}/preview
+Failed API: Post /storage/files
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "file": [
+      "MultiPartValue",
+      "VoAPI_SPECIFICATION"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /storage/files/{fileId}/preview
+Candidate API Method: Get
+Candidate API Seq: Post /storage/files  -->  Put /storage/files/{fileId}  -->  Get /storage/files/{fileId}/preview
+Failed API: Post /storage/files
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "file": [
+      "MultiPartValue",
+      "VoAPI_SPECIFICATION"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /storage/files/{fileId}/preview
+Candidate API Method: Get
+Candidate API Seq: Post /storage/files  -->  Put /storage/files/{fileId}  -->  Get /storage/files/{fileId}/preview
+Failed API: Post /storage/files
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "file": [
+      "MultiPartValue",
+      "VoAPI_SPECIFICATION"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /storage/files/{fileId}/preview
+Candidate API Method: Get
+Candidate API Seq: Post /storage/files  -->  Put /storage/files/{fileId}  -->  Get /storage/files/{fileId}/preview
+Failed API: Post /storage/files
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "file": [
+      "MultiPartValue",
+      "VoAPI_SPECIFICATION"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /storage/files/{fileId}/preview
+Candidate API Method: Get
+Candidate API Seq: Post /storage/files  -->  Put /storage/files/{fileId}  -->  Get /storage/files/{fileId}/preview
+Failed API: Post /storage/files
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "file": [
+      "MultiPartValue",
+      "VoAPI_SPECIFICATION"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /storage/files/{fileId}/preview
+Candidate API Method: Get
+Candidate API Seq: Post /storage/files  -->  Put /storage/files/{fileId}  -->  Get /storage/files/{fileId}/preview
+Failed API: Post /storage/files
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "file": [
+      "MultiPartValue",
+      "VoAPI_SPECIFICATION"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+-------- VoAPI Vul API --------
+API Vul Type: ssrf
+Vul API Url: %2Favatars%2Fimage
+API Vul Param: url&width=7&height=12
+

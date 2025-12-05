@@ -1,0 +1,10 @@
+-------- VoAPI Vul API --------
+API Vul Type: ssrf
+Vul API Url: %2Favatars%2Ffavicon
+API Vul Param: url
+
+-------- VoAPI Vul API --------
+API Vul Type: ssrf
+Vul API Url: %2Favatars%2Ffavicon
+API Vul Param: url
+

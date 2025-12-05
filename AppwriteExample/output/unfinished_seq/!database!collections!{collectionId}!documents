@@ -1,0 +1,640 @@
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Get
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents  -->  Get /database/collections/{collectionId}/documents
+Failed API: Post /database/collections
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString0",
+      "VoAPI_RANDOM"
+    ],
+    "read": [
+      "Array",
+      [
+        "VoAPITestString20",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "rules": [
+      "Array",
+      [
+        "VoAPITestString15",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "write": [
+      "Array",
+      [
+        "VoAPITestString12",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Post
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents
+Failed API: Post /database/collections
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString0",
+      "VoAPI_RANDOM"
+    ],
+    "read": [
+      "Array",
+      [
+        "VoAPITestString20",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "rules": [
+      "Array",
+      [
+        "VoAPITestString15",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "write": [
+      "Array",
+      [
+        "VoAPITestString12",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Get
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents  -->  Get /database/collections/{collectionId}/documents
+Failed API: Post /database/collections
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString9",
+      "VoAPI_RANDOM"
+    ],
+    "read": [
+      "Array",
+      [
+        "VoAPITestString12",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "rules": [
+      "Array",
+      [
+        "VoAPITestString9",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "write": [
+      "Array",
+      [
+        "VoAPITestString15",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Post
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents
+Failed API: Post /database/collections
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString9",
+      "VoAPI_RANDOM"
+    ],
+    "read": [
+      "Array",
+      [
+        "VoAPITestString12",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "rules": [
+      "Array",
+      [
+        "VoAPITestString9",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "write": [
+      "Array",
+      [
+        "VoAPITestString15",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Get
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents  -->  Get /database/collections/{collectionId}/documents
+Failed API: Post /database/collections
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString15",
+      "VoAPI_RANDOM"
+    ],
+    "read": [
+      "Array",
+      [
+        "VoAPITestString32",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "rules": [
+      "Array",
+      [
+        "VoAPITestString33",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "write": [
+      "Array",
+      [
+        "VoAPITestString40",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Post
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents
+Failed API: Post /database/collections
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString15",
+      "VoAPI_RANDOM"
+    ],
+    "read": [
+      "Array",
+      [
+        "VoAPITestString32",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "rules": [
+      "Array",
+      [
+        "VoAPITestString33",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "write": [
+      "Array",
+      [
+        "VoAPITestString40",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Get
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents  -->  Get /database/collections/{collectionId}/documents
+Failed API: Post /database/collections
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString8",
+      "VoAPI_RANDOM"
+    ],
+    "read": [
+      "Array",
+      [
+        "VoAPITestString4",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "rules": [
+      "Array",
+      [
+        "VoAPITestString28",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "write": [
+      "Array",
+      [
+        "VoAPITestString36",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Post
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents
+Failed API: Post /database/collections
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString8",
+      "VoAPI_RANDOM"
+    ],
+    "read": [
+      "Array",
+      [
+        "VoAPITestString4",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "rules": [
+      "Array",
+      [
+        "VoAPITestString28",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "write": [
+      "Array",
+      [
+        "VoAPITestString36",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Get
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents  -->  Get /database/collections/{collectionId}/documents
+Failed API: Post /database/collections
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString22",
+      "VoAPI_RANDOM"
+    ],
+    "read": [
+      "Array",
+      [
+        "VoAPITestString5",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "rules": [
+      "Array",
+      [
+        "VoAPITestString14",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "write": [
+      "Array",
+      [
+        "VoAPITestString14",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Post
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents
+Failed API: Post /database/collections
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString22",
+      "VoAPI_RANDOM"
+    ],
+    "read": [
+      "Array",
+      [
+        "VoAPITestString5",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "rules": [
+      "Array",
+      [
+        "VoAPITestString14",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "write": [
+      "Array",
+      [
+        "VoAPITestString14",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Get
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents  -->  Get /database/collections/{collectionId}/documents
+Failed API: Post /database/collections
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString40",
+      "VoAPI_RANDOM"
+    ],
+    "read": [
+      "Array",
+      [
+        "VoAPITestString25",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "rules": [
+      "Array",
+      [
+        "VoAPITestString41",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "write": [
+      "Array",
+      [
+        "VoAPITestString41",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Post
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents
+Failed API: Post /database/collections
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString40",
+      "VoAPI_RANDOM"
+    ],
+    "read": [
+      "Array",
+      [
+        "VoAPITestString25",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "rules": [
+      "Array",
+      [
+        "VoAPITestString41",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "write": [
+      "Array",
+      [
+        "VoAPITestString41",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Get
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents  -->  Get /database/collections/{collectionId}/documents
+Failed API: Post /database/collections
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString36",
+      "VoAPI_RANDOM"
+    ],
+    "read": [
+      "Array",
+      [
+        "VoAPITestString10",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "rules": [
+      "Array",
+      [
+        "VoAPITestString35",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "write": [
+      "Array",
+      [
+        "VoAPITestString36",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Post
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents
+Failed API: Post /database/collections
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString36",
+      "VoAPI_RANDOM"
+    ],
+    "read": [
+      "Array",
+      [
+        "VoAPITestString10",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "rules": [
+      "Array",
+      [
+        "VoAPITestString35",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "write": [
+      "Array",
+      [
+        "VoAPITestString36",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Get
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents  -->  Get /database/collections/{collectionId}/documents
+Failed API: Post /database/collections
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString43",
+      "VoAPI_RANDOM"
+    ],
+    "read": [
+      "Array",
+      [
+        "VoAPITestString39",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "rules": [
+      "Array",
+      [
+        "VoAPITestString22",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "write": [
+      "Array",
+      [
+        "VoAPITestString15",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /database/collections/{collectionId}/documents
+Candidate API Method: Post
+Candidate API Seq: Post /database/collections  -->  Put /database/collections/{collectionId}  -->  Post /database/collections/{collectionId}/documents
+Failed API: Post /database/collections
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString43",
+      "VoAPI_RANDOM"
+    ],
+    "read": [
+      "Array",
+      [
+        "VoAPITestString39",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "rules": [
+      "Array",
+      [
+        "VoAPITestString22",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ],
+    "write": [
+      "Array",
+      [
+        "VoAPITestString15",
+        "VoAPI_RANDOM"
+      ],
+      true
+    ]
+  }
+}

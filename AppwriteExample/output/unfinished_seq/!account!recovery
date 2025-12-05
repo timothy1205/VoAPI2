@@ -1,0 +1,220 @@
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Post
+Candidate API Seq: Get /account  -->  Post /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Put
+Candidate API Seq: Get /account  -->  Post /account/recovery  -->  Put /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Post
+Candidate API Seq: Get /account  -->  Post /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Put
+Candidate API Seq: Get /account  -->  Post /account/recovery  -->  Put /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Post
+Candidate API Seq: Get /account  -->  Post /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Put
+Candidate API Seq: Get /account  -->  Post /account/recovery  -->  Put /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Post
+Candidate API Seq: Get /account  -->  Post /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Put
+Candidate API Seq: Get /account  -->  Post /account/recovery  -->  Put /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Post
+Candidate API Seq: Get /account  -->  Post /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Put
+Candidate API Seq: Get /account  -->  Post /account/recovery  -->  Put /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Post
+Candidate API Seq: Get /account  -->  Post /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Put
+Candidate API Seq: Get /account  -->  Post /account/recovery  -->  Put /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Post
+Candidate API Seq: Get /account  -->  Post /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Put
+Candidate API Seq: Get /account  -->  Post /account/recovery  -->  Put /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Post
+Candidate API Seq: Get /account  -->  Post /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Put
+Candidate API Seq: Get /account  -->  Post /account/recovery  -->  Put /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Post
+Candidate API Seq: Get /account  -->  Post /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Put
+Candidate API Seq: Get /account  -->  Post /account/recovery  -->  Put /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Post
+Candidate API Seq: Get /account  -->  Post /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /account/recovery
+Candidate API Method: Put
+Candidate API Seq: Get /account  -->  Post /account/recovery  -->  Put /account/recovery
+Failed API: Get /account
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {}
+}

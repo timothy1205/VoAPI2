@@ -1,0 +1,192 @@
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /teams/{teamId}/memberships/{membershipId}/status
+Candidate API Method: Patch
+Candidate API Seq: Post /teams  -->  Put /teams/{teamId}  -->  Post /teams/{teamId}/memberships  -->  Patch /teams/{teamId}/memberships/{membershipId}  -->  Patch /teams/{teamId}/memberships/{membershipId}/status
+Failed API: Post /teams
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString30",
+      "VoAPI_RANDOM"
+    ],
+    "roles": [
+      "Array",
+      [
+        "VoAPITestString9",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /teams/{teamId}/memberships/{membershipId}/status
+Candidate API Method: Patch
+Candidate API Seq: Post /teams  -->  Put /teams/{teamId}  -->  Post /teams/{teamId}/memberships  -->  Patch /teams/{teamId}/memberships/{membershipId}  -->  Patch /teams/{teamId}/memberships/{membershipId}/status
+Failed API: Post /teams
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString9",
+      "VoAPI_RANDOM"
+    ],
+    "roles": [
+      "Array",
+      [
+        "VoAPITestString11",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /teams/{teamId}/memberships/{membershipId}/status
+Candidate API Method: Patch
+Candidate API Seq: Post /teams  -->  Put /teams/{teamId}  -->  Post /teams/{teamId}/memberships  -->  Patch /teams/{teamId}/memberships/{membershipId}  -->  Patch /teams/{teamId}/memberships/{membershipId}/status
+Failed API: Post /teams
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString12",
+      "VoAPI_RANDOM"
+    ],
+    "roles": [
+      "Array",
+      [
+        "VoAPITestString34",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /teams/{teamId}/memberships/{membershipId}/status
+Candidate API Method: Patch
+Candidate API Seq: Post /teams  -->  Put /teams/{teamId}  -->  Post /teams/{teamId}/memberships  -->  Patch /teams/{teamId}/memberships/{membershipId}  -->  Patch /teams/{teamId}/memberships/{membershipId}/status
+Failed API: Post /teams
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString11",
+      "VoAPI_RANDOM"
+    ],
+    "roles": [
+      "Array",
+      [
+        "VoAPITestString43",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /teams/{teamId}/memberships/{membershipId}/status
+Candidate API Method: Patch
+Candidate API Seq: Post /teams  -->  Put /teams/{teamId}  -->  Post /teams/{teamId}/memberships  -->  Patch /teams/{teamId}/memberships/{membershipId}  -->  Patch /teams/{teamId}/memberships/{membershipId}/status
+Failed API: Post /teams
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString4",
+      "VoAPI_RANDOM"
+    ],
+    "roles": [
+      "Array",
+      [
+        "VoAPITestString11",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /teams/{teamId}/memberships/{membershipId}/status
+Candidate API Method: Patch
+Candidate API Seq: Post /teams  -->  Put /teams/{teamId}  -->  Post /teams/{teamId}/memberships  -->  Patch /teams/{teamId}/memberships/{membershipId}  -->  Patch /teams/{teamId}/memberships/{membershipId}/status
+Failed API: Post /teams
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString13",
+      "VoAPI_RANDOM"
+    ],
+    "roles": [
+      "Array",
+      [
+        "VoAPITestString35",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /teams/{teamId}/memberships/{membershipId}/status
+Candidate API Method: Patch
+Candidate API Seq: Post /teams  -->  Put /teams/{teamId}  -->  Post /teams/{teamId}/memberships  -->  Patch /teams/{teamId}/memberships/{membershipId}  -->  Patch /teams/{teamId}/memberships/{membershipId}/status
+Failed API: Post /teams
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString6",
+      "VoAPI_RANDOM"
+    ],
+    "roles": [
+      "Array",
+      [
+        "VoAPITestString40",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /teams/{teamId}/memberships/{membershipId}/status
+Candidate API Method: Patch
+Candidate API Seq: Post /teams  -->  Put /teams/{teamId}  -->  Post /teams/{teamId}/memberships  -->  Patch /teams/{teamId}/memberships/{membershipId}  -->  Patch /teams/{teamId}/memberships/{membershipId}/status
+Failed API: Post /teams
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "name": [
+      "VoAPITestString39",
+      "VoAPI_RANDOM"
+    ],
+    "roles": [
+      "Array",
+      [
+        "VoAPITestString34",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ]
+  }
+}
