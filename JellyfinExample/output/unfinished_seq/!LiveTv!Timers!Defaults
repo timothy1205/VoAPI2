@@ -1,0 +1,56 @@
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /LiveTv/Timers/Defaults
+Candidate API Method: Get
+Candidate API Seq: Get /LiveTv/Timers  -->  Get /LiveTv/Timers/Defaults
+Failed API: Get /LiveTv/Timers
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "channelId": [
+      "VoAPITestString12",
+      "VoAPI_RANDOM"
+    ],
+    "seriesTimerId": [
+      "VoAPITestString9",
+      "VoAPI_RANDOM"
+    ],
+    "isActive": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "isScheduled": [
+      false,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /LiveTv/Timers/Defaults
+Candidate API Method: Get
+Candidate API Seq: Get /LiveTv/Timers  -->  Get /LiveTv/Timers/Defaults
+Failed API: Get /LiveTv/Timers
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "channelId": [
+      "VoAPITestString35",
+      "VoAPI_RANDOM"
+    ],
+    "seriesTimerId": [
+      "VoAPITestString11",
+      "VoAPI_RANDOM"
+    ],
+    "isActive": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "isScheduled": [
+      false,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}

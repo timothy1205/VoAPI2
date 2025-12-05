@@ -1,0 +1,368 @@
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /MusicGenres/{name}/Images/{imageType}/{imageIndex}
+Candidate API Method: Get
+Candidate API Seq: Get /MusicGenres  -->  Get /MusicGenres/{name}/Images/{imageType}/{imageIndex}
+Failed API: Get /MusicGenres
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "startIndex": [
+      35,
+      "VoAPI_RANDOM"
+    ],
+    "limit": [
+      41,
+      "VoAPI_RANDOM"
+    ],
+    "searchTerm": [
+      "VoAPITestString2",
+      "VoAPI_RANDOM"
+    ],
+    "parentId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d11",
+      "VoAPI_RANDOM"
+    ],
+    "fields": [
+      "Array",
+      [
+        "AirTime",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString27",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "includeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString19",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "isFavorite": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "imageTypeLimit": [
+      36,
+      "VoAPI_RANDOM"
+    ],
+    "enableImageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "userId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d41",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWithOrGreater": [
+      "VoAPITestString22",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWith": [
+      "VoAPITestString36",
+      "VoAPI_RANDOM"
+    ],
+    "nameLessThan": [
+      "VoAPITestString10",
+      "VoAPI_RANDOM"
+    ],
+    "enableImages": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "enableTotalRecordCount": [
+      true,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /MusicGenres/{name}/Images/{imageType}/{imageIndex}
+Candidate API Method: Head
+Candidate API Seq: Get /MusicGenres  -->  Head /MusicGenres/{name}/Images/{imageType}/{imageIndex}
+Failed API: Get /MusicGenres
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "startIndex": [
+      35,
+      "VoAPI_RANDOM"
+    ],
+    "limit": [
+      41,
+      "VoAPI_RANDOM"
+    ],
+    "searchTerm": [
+      "VoAPITestString2",
+      "VoAPI_RANDOM"
+    ],
+    "parentId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d11",
+      "VoAPI_RANDOM"
+    ],
+    "fields": [
+      "Array",
+      [
+        "AirTime",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString27",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "includeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString19",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "isFavorite": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "imageTypeLimit": [
+      36,
+      "VoAPI_RANDOM"
+    ],
+    "enableImageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "userId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d41",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWithOrGreater": [
+      "VoAPITestString22",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWith": [
+      "VoAPITestString36",
+      "VoAPI_RANDOM"
+    ],
+    "nameLessThan": [
+      "VoAPITestString10",
+      "VoAPI_RANDOM"
+    ],
+    "enableImages": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "enableTotalRecordCount": [
+      true,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /MusicGenres/{name}/Images/{imageType}/{imageIndex}
+Candidate API Method: Get
+Candidate API Seq: Get /MusicGenres  -->  Get /MusicGenres/{name}/Images/{imageType}/{imageIndex}
+Failed API: Get /MusicGenres
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "startIndex": [
+      10,
+      "VoAPI_RANDOM"
+    ],
+    "limit": [
+      6,
+      "VoAPI_RANDOM"
+    ],
+    "searchTerm": [
+      "VoAPITestString20",
+      "VoAPI_RANDOM"
+    ],
+    "parentId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d12",
+      "VoAPI_RANDOM"
+    ],
+    "fields": [
+      "Array",
+      [
+        "AirTime",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString27",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "includeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString1",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "isFavorite": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "imageTypeLimit": [
+      39,
+      "VoAPI_RANDOM"
+    ],
+    "enableImageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "userId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d49",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWithOrGreater": [
+      "VoAPITestString27",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWith": [
+      "VoAPITestString15",
+      "VoAPI_RANDOM"
+    ],
+    "nameLessThan": [
+      "VoAPITestString11",
+      "VoAPI_RANDOM"
+    ],
+    "enableImages": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "enableTotalRecordCount": [
+      true,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /MusicGenres/{name}/Images/{imageType}/{imageIndex}
+Candidate API Method: Head
+Candidate API Seq: Get /MusicGenres  -->  Head /MusicGenres/{name}/Images/{imageType}/{imageIndex}
+Failed API: Get /MusicGenres
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "startIndex": [
+      10,
+      "VoAPI_RANDOM"
+    ],
+    "limit": [
+      6,
+      "VoAPI_RANDOM"
+    ],
+    "searchTerm": [
+      "VoAPITestString20",
+      "VoAPI_RANDOM"
+    ],
+    "parentId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d12",
+      "VoAPI_RANDOM"
+    ],
+    "fields": [
+      "Array",
+      [
+        "AirTime",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString27",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "includeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString1",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "isFavorite": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "imageTypeLimit": [
+      39,
+      "VoAPI_RANDOM"
+    ],
+    "enableImageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "userId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d49",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWithOrGreater": [
+      "VoAPITestString27",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWith": [
+      "VoAPITestString15",
+      "VoAPI_RANDOM"
+    ],
+    "nameLessThan": [
+      "VoAPITestString11",
+      "VoAPI_RANDOM"
+    ],
+    "enableImages": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "enableTotalRecordCount": [
+      true,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}

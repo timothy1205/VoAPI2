@@ -1,0 +1,1824 @@
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /Items/{itemId}/Images/{imageType}
+Candidate API Method: Get
+Candidate API Seq: Get /Items  -->  Get /Items/{itemId}/Images  -->  Get /Items/{itemId}/Images/{imageType}
+Failed API: Get /Items
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "userId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d13",
+      "VoAPI_RANDOM"
+    ],
+    "maxOfficialRating": [
+      "VoAPITestString39",
+      "VoAPI_RANDOM"
+    ],
+    "hasThemeSong": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "hasThemeVideo": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "hasSubtitles": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "hasSpecialFeature": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "hasTrailer": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "adjacentTo": [
+      "VoAPITestString0",
+      "VoAPI_RANDOM"
+    ],
+    "parentIndexNumber": [
+      22,
+      "VoAPI_RANDOM"
+    ],
+    "hasParentalRating": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "isHd": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "is4K": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "locationTypes": [
+      "Array",
+      [
+        "FileSystem",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeLocationTypes": [
+      "Array",
+      [
+        "FileSystem",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "isMissing": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "isUnaired": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "minCommunityRating": [
+      4.68,
+      "VoAPI_RANDOM"
+    ],
+    "minCriticRating": [
+      4.77,
+      "VoAPI_RANDOM"
+    ],
+    "minPremiereDate": [
+      "1995-04-04T20:20:39+00:00",
+      "VoAPI_RANDOM"
+    ],
+    "minDateLastSaved": [
+      "2020-04-04T20:20:39+00:00",
+      "VoAPI_RANDOM"
+    ],
+    "minDateLastSavedForUser": [
+      "2019-04-04T20:20:39+00:00",
+      "VoAPI_RANDOM"
+    ],
+    "maxPremiereDate": [
+      "2002-04-04T20:20:39+00:00",
+      "VoAPI_RANDOM"
+    ],
+    "hasOverview": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "hasImdbId": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "hasTmdbId": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "hasTvdbId": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "excludeItemIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d32",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "startIndex": [
+      29,
+      "VoAPI_RANDOM"
+    ],
+    "limit": [
+      24,
+      "VoAPI_RANDOM"
+    ],
+    "recursive": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "searchTerm": [
+      "VoAPITestString19",
+      "VoAPI_RANDOM"
+    ],
+    "sortOrder": [
+      "Array",
+      [
+        "Ascending",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "parentId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d39",
+      "VoAPI_RANDOM"
+    ],
+    "fields": [
+      "Array",
+      [
+        "AirTime",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString34",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "includeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString15",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "filters": [
+      "Array",
+      [
+        "IsFolder",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "isFavorite": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "mediaTypes": [
+      "Array",
+      [
+        "VoAPITestString34",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "imageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "sortBy": [
+      "Array",
+      [
+        "VoAPITestString28",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "isPlayed": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "genres": [
+      "Array",
+      [
+        "VoAPITestString0",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "officialRatings": [
+      "Array",
+      [
+        "VoAPITestString30",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "tags": [
+      "Array",
+      [
+        "VoAPITestString22",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "years": [
+      "Array",
+      [
+        1,
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "enableUserData": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "imageTypeLimit": [
+      29,
+      "VoAPI_RANDOM"
+    ],
+    "enableImageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "person": [
+      "VoAPITestString17",
+      "VoAPI_RANDOM"
+    ],
+    "personIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d23",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "personTypes": [
+      "Array",
+      [
+        "VoAPITestString33",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "studios": [
+      "Array",
+      [
+        "VoAPITestString12",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "artists": [
+      "Array",
+      [
+        "VoAPITestString7",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "excludeArtistIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d51",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "artistIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d38",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "albumArtistIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d29",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "contributingArtistIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d45",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "albums": [
+      "Array",
+      [
+        "VoAPITestString29",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "albumIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d11",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "ids": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d39",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "videoTypes": [
+      "Array",
+      [
+        "VideoFile",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "minOfficialRating": [
+      "VoAPITestString33",
+      "VoAPI_RANDOM"
+    ],
+    "isLocked": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "isPlaceHolder": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "hasOfficialRating": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "collapseBoxSetItems": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "minWidth": [
+      24,
+      "VoAPI_RANDOM"
+    ],
+    "minHeight": [
+      3,
+      "VoAPI_RANDOM"
+    ],
+    "maxWidth": [
+      7,
+      "VoAPI_RANDOM"
+    ],
+    "maxHeight": [
+      9,
+      "VoAPI_RANDOM"
+    ],
+    "is3D": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "seriesStatus": [
+      "Array",
+      [
+        "Continuing",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "nameStartsWithOrGreater": [
+      "VoAPITestString33",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWith": [
+      "VoAPITestString40",
+      "VoAPI_RANDOM"
+    ],
+    "nameLessThan": [
+      "VoAPITestString32",
+      "VoAPI_RANDOM"
+    ],
+    "studioIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d52",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "genreIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d49",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "enableTotalRecordCount": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "enableImages": [
+      false,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /Items/{itemId}/Images/{imageType}
+Candidate API Method: Head
+Candidate API Seq: Get /Items  -->  Get /Items/{itemId}/Images  -->  Head /Items/{itemId}/Images/{imageType}
+Failed API: Get /Items
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "userId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d13",
+      "VoAPI_RANDOM"
+    ],
+    "maxOfficialRating": [
+      "VoAPITestString39",
+      "VoAPI_RANDOM"
+    ],
+    "hasThemeSong": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "hasThemeVideo": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "hasSubtitles": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "hasSpecialFeature": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "hasTrailer": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "adjacentTo": [
+      "VoAPITestString0",
+      "VoAPI_RANDOM"
+    ],
+    "parentIndexNumber": [
+      22,
+      "VoAPI_RANDOM"
+    ],
+    "hasParentalRating": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "isHd": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "is4K": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "locationTypes": [
+      "Array",
+      [
+        "FileSystem",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeLocationTypes": [
+      "Array",
+      [
+        "FileSystem",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "isMissing": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "isUnaired": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "minCommunityRating": [
+      4.68,
+      "VoAPI_RANDOM"
+    ],
+    "minCriticRating": [
+      4.77,
+      "VoAPI_RANDOM"
+    ],
+    "minPremiereDate": [
+      "1995-04-04T20:20:39+00:00",
+      "VoAPI_RANDOM"
+    ],
+    "minDateLastSaved": [
+      "2020-04-04T20:20:39+00:00",
+      "VoAPI_RANDOM"
+    ],
+    "minDateLastSavedForUser": [
+      "2019-04-04T20:20:39+00:00",
+      "VoAPI_RANDOM"
+    ],
+    "maxPremiereDate": [
+      "2002-04-04T20:20:39+00:00",
+      "VoAPI_RANDOM"
+    ],
+    "hasOverview": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "hasImdbId": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "hasTmdbId": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "hasTvdbId": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "excludeItemIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d32",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "startIndex": [
+      29,
+      "VoAPI_RANDOM"
+    ],
+    "limit": [
+      24,
+      "VoAPI_RANDOM"
+    ],
+    "recursive": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "searchTerm": [
+      "VoAPITestString19",
+      "VoAPI_RANDOM"
+    ],
+    "sortOrder": [
+      "Array",
+      [
+        "Ascending",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "parentId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d39",
+      "VoAPI_RANDOM"
+    ],
+    "fields": [
+      "Array",
+      [
+        "AirTime",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString34",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "includeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString15",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "filters": [
+      "Array",
+      [
+        "IsFolder",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "isFavorite": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "mediaTypes": [
+      "Array",
+      [
+        "VoAPITestString34",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "imageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "sortBy": [
+      "Array",
+      [
+        "VoAPITestString28",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "isPlayed": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "genres": [
+      "Array",
+      [
+        "VoAPITestString0",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "officialRatings": [
+      "Array",
+      [
+        "VoAPITestString30",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "tags": [
+      "Array",
+      [
+        "VoAPITestString22",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "years": [
+      "Array",
+      [
+        1,
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "enableUserData": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "imageTypeLimit": [
+      29,
+      "VoAPI_RANDOM"
+    ],
+    "enableImageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "person": [
+      "VoAPITestString17",
+      "VoAPI_RANDOM"
+    ],
+    "personIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d23",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "personTypes": [
+      "Array",
+      [
+        "VoAPITestString33",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "studios": [
+      "Array",
+      [
+        "VoAPITestString12",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "artists": [
+      "Array",
+      [
+        "VoAPITestString7",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "excludeArtistIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d51",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "artistIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d38",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "albumArtistIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d29",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "contributingArtistIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d45",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "albums": [
+      "Array",
+      [
+        "VoAPITestString29",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "albumIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d11",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "ids": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d39",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "videoTypes": [
+      "Array",
+      [
+        "VideoFile",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "minOfficialRating": [
+      "VoAPITestString33",
+      "VoAPI_RANDOM"
+    ],
+    "isLocked": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "isPlaceHolder": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "hasOfficialRating": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "collapseBoxSetItems": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "minWidth": [
+      24,
+      "VoAPI_RANDOM"
+    ],
+    "minHeight": [
+      3,
+      "VoAPI_RANDOM"
+    ],
+    "maxWidth": [
+      7,
+      "VoAPI_RANDOM"
+    ],
+    "maxHeight": [
+      9,
+      "VoAPI_RANDOM"
+    ],
+    "is3D": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "seriesStatus": [
+      "Array",
+      [
+        "Continuing",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "nameStartsWithOrGreater": [
+      "VoAPITestString33",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWith": [
+      "VoAPITestString40",
+      "VoAPI_RANDOM"
+    ],
+    "nameLessThan": [
+      "VoAPITestString32",
+      "VoAPI_RANDOM"
+    ],
+    "studioIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d52",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "genreIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d49",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "enableTotalRecordCount": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "enableImages": [
+      false,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /Items/{itemId}/Images/{imageType}
+Candidate API Method: Get
+Candidate API Seq: Get /Items  -->  Get /Items/{itemId}/Images  -->  Get /Items/{itemId}/Images/{imageType}
+Failed API: Get /Items
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "userId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d25",
+      "VoAPI_RANDOM"
+    ],
+    "maxOfficialRating": [
+      "VoAPITestString9",
+      "VoAPI_RANDOM"
+    ],
+    "hasThemeSong": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "hasThemeVideo": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "hasSubtitles": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "hasSpecialFeature": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "hasTrailer": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "adjacentTo": [
+      "VoAPITestString10",
+      "VoAPI_RANDOM"
+    ],
+    "parentIndexNumber": [
+      25,
+      "VoAPI_RANDOM"
+    ],
+    "hasParentalRating": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "isHd": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "is4K": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "locationTypes": [
+      "Array",
+      [
+        "FileSystem",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeLocationTypes": [
+      "Array",
+      [
+        "FileSystem",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "isMissing": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "isUnaired": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "minCommunityRating": [
+      4.73,
+      "VoAPI_RANDOM"
+    ],
+    "minCriticRating": [
+      4.51,
+      "VoAPI_RANDOM"
+    ],
+    "minPremiereDate": [
+      "2005-04-04T20:20:39+00:00",
+      "VoAPI_RANDOM"
+    ],
+    "minDateLastSaved": [
+      "2008-04-04T20:20:39+00:00",
+      "VoAPI_RANDOM"
+    ],
+    "minDateLastSavedForUser": [
+      "2026-04-04T20:20:39+00:00",
+      "VoAPI_RANDOM"
+    ],
+    "maxPremiereDate": [
+      "2019-04-04T20:20:39+00:00",
+      "VoAPI_RANDOM"
+    ],
+    "hasOverview": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "hasImdbId": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "hasTmdbId": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "hasTvdbId": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "excludeItemIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d36",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "startIndex": [
+      36,
+      "VoAPI_RANDOM"
+    ],
+    "limit": [
+      22,
+      "VoAPI_RANDOM"
+    ],
+    "recursive": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "searchTerm": [
+      "VoAPITestString9",
+      "VoAPI_RANDOM"
+    ],
+    "sortOrder": [
+      "Array",
+      [
+        "Ascending",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "parentId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d28",
+      "VoAPI_RANDOM"
+    ],
+    "fields": [
+      "Array",
+      [
+        "AirTime",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString15",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "includeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString14",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "filters": [
+      "Array",
+      [
+        "IsFolder",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "isFavorite": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "mediaTypes": [
+      "Array",
+      [
+        "VoAPITestString0",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "imageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "sortBy": [
+      "Array",
+      [
+        "VoAPITestString31",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "isPlayed": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "genres": [
+      "Array",
+      [
+        "VoAPITestString19",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "officialRatings": [
+      "Array",
+      [
+        "VoAPITestString7",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "tags": [
+      "Array",
+      [
+        "VoAPITestString29",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "years": [
+      "Array",
+      [
+        31,
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "enableUserData": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "imageTypeLimit": [
+      3,
+      "VoAPI_RANDOM"
+    ],
+    "enableImageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "person": [
+      "VoAPITestString41",
+      "VoAPI_RANDOM"
+    ],
+    "personIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d30",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "personTypes": [
+      "Array",
+      [
+        "VoAPITestString7",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "studios": [
+      "Array",
+      [
+        "VoAPITestString23",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "artists": [
+      "Array",
+      [
+        "VoAPITestString41",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "excludeArtistIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d46",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "artistIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d48",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "albumArtistIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d46",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "contributingArtistIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d41",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "albums": [
+      "Array",
+      [
+        "VoAPITestString19",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "albumIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d46",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "ids": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d12",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "videoTypes": [
+      "Array",
+      [
+        "VideoFile",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "minOfficialRating": [
+      "VoAPITestString18",
+      "VoAPI_RANDOM"
+    ],
+    "isLocked": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "isPlaceHolder": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "hasOfficialRating": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "collapseBoxSetItems": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "minWidth": [
+      8,
+      "VoAPI_RANDOM"
+    ],
+    "minHeight": [
+      32,
+      "VoAPI_RANDOM"
+    ],
+    "maxWidth": [
+      19,
+      "VoAPI_RANDOM"
+    ],
+    "maxHeight": [
+      19,
+      "VoAPI_RANDOM"
+    ],
+    "is3D": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "seriesStatus": [
+      "Array",
+      [
+        "Continuing",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "nameStartsWithOrGreater": [
+      "VoAPITestString42",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWith": [
+      "VoAPITestString42",
+      "VoAPI_RANDOM"
+    ],
+    "nameLessThan": [
+      "VoAPITestString16",
+      "VoAPI_RANDOM"
+    ],
+    "studioIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d50",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "genreIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d19",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "enableTotalRecordCount": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "enableImages": [
+      false,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /Items/{itemId}/Images/{imageType}
+Candidate API Method: Head
+Candidate API Seq: Get /Items  -->  Get /Items/{itemId}/Images  -->  Head /Items/{itemId}/Images/{imageType}
+Failed API: Get /Items
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "userId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d25",
+      "VoAPI_RANDOM"
+    ],
+    "maxOfficialRating": [
+      "VoAPITestString9",
+      "VoAPI_RANDOM"
+    ],
+    "hasThemeSong": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "hasThemeVideo": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "hasSubtitles": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "hasSpecialFeature": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "hasTrailer": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "adjacentTo": [
+      "VoAPITestString10",
+      "VoAPI_RANDOM"
+    ],
+    "parentIndexNumber": [
+      25,
+      "VoAPI_RANDOM"
+    ],
+    "hasParentalRating": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "isHd": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "is4K": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "locationTypes": [
+      "Array",
+      [
+        "FileSystem",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeLocationTypes": [
+      "Array",
+      [
+        "FileSystem",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "isMissing": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "isUnaired": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "minCommunityRating": [
+      4.73,
+      "VoAPI_RANDOM"
+    ],
+    "minCriticRating": [
+      4.51,
+      "VoAPI_RANDOM"
+    ],
+    "minPremiereDate": [
+      "2005-04-04T20:20:39+00:00",
+      "VoAPI_RANDOM"
+    ],
+    "minDateLastSaved": [
+      "2008-04-04T20:20:39+00:00",
+      "VoAPI_RANDOM"
+    ],
+    "minDateLastSavedForUser": [
+      "2026-04-04T20:20:39+00:00",
+      "VoAPI_RANDOM"
+    ],
+    "maxPremiereDate": [
+      "2019-04-04T20:20:39+00:00",
+      "VoAPI_RANDOM"
+    ],
+    "hasOverview": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "hasImdbId": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "hasTmdbId": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "hasTvdbId": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "excludeItemIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d36",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "startIndex": [
+      36,
+      "VoAPI_RANDOM"
+    ],
+    "limit": [
+      22,
+      "VoAPI_RANDOM"
+    ],
+    "recursive": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "searchTerm": [
+      "VoAPITestString9",
+      "VoAPI_RANDOM"
+    ],
+    "sortOrder": [
+      "Array",
+      [
+        "Ascending",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "parentId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d28",
+      "VoAPI_RANDOM"
+    ],
+    "fields": [
+      "Array",
+      [
+        "AirTime",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString15",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "includeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString14",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "filters": [
+      "Array",
+      [
+        "IsFolder",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "isFavorite": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "mediaTypes": [
+      "Array",
+      [
+        "VoAPITestString0",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "imageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "sortBy": [
+      "Array",
+      [
+        "VoAPITestString31",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "isPlayed": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "genres": [
+      "Array",
+      [
+        "VoAPITestString19",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "officialRatings": [
+      "Array",
+      [
+        "VoAPITestString7",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "tags": [
+      "Array",
+      [
+        "VoAPITestString29",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "years": [
+      "Array",
+      [
+        31,
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "enableUserData": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "imageTypeLimit": [
+      3,
+      "VoAPI_RANDOM"
+    ],
+    "enableImageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "person": [
+      "VoAPITestString41",
+      "VoAPI_RANDOM"
+    ],
+    "personIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d30",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "personTypes": [
+      "Array",
+      [
+        "VoAPITestString7",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "studios": [
+      "Array",
+      [
+        "VoAPITestString23",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "artists": [
+      "Array",
+      [
+        "VoAPITestString41",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "excludeArtistIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d46",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "artistIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d48",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "albumArtistIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d46",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "contributingArtistIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d41",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "albums": [
+      "Array",
+      [
+        "VoAPITestString19",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "albumIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d46",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "ids": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d12",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "videoTypes": [
+      "Array",
+      [
+        "VideoFile",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "minOfficialRating": [
+      "VoAPITestString18",
+      "VoAPI_RANDOM"
+    ],
+    "isLocked": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "isPlaceHolder": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "hasOfficialRating": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "collapseBoxSetItems": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "minWidth": [
+      8,
+      "VoAPI_RANDOM"
+    ],
+    "minHeight": [
+      32,
+      "VoAPI_RANDOM"
+    ],
+    "maxWidth": [
+      19,
+      "VoAPI_RANDOM"
+    ],
+    "maxHeight": [
+      19,
+      "VoAPI_RANDOM"
+    ],
+    "is3D": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "seriesStatus": [
+      "Array",
+      [
+        "Continuing",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "nameStartsWithOrGreater": [
+      "VoAPITestString42",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWith": [
+      "VoAPITestString42",
+      "VoAPI_RANDOM"
+    ],
+    "nameLessThan": [
+      "VoAPITestString16",
+      "VoAPI_RANDOM"
+    ],
+    "studioIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d50",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "genreIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d19",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "enableTotalRecordCount": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "enableImages": [
+      false,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}

@@ -1,0 +1,254 @@
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /LiveTv/ListingProviders/Lineups
+Candidate API Method: Get
+Candidate API Seq: Post /LiveTv/ListingProviders  -->  Get /LiveTv/ListingProviders/Lineups
+Failed API: Post /LiveTv/ListingProviders
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "pw": [
+      "VoAPITestString5",
+      "VoAPI_RANDOM"
+    ],
+    "validateListings": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "validateLogin": [
+      false,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {
+    "Id": [
+      "VoAPITestString29",
+      "VoAPI_RANDOM"
+    ],
+    "Type": [
+      "VoAPITestString31",
+      "VoAPI_RANDOM"
+    ],
+    "Username": [
+      "VoAPITestString0",
+      "VoAPI_RANDOM"
+    ],
+    "Password": [
+      "VoAPITestString9",
+      "VoAPI_RANDOM"
+    ],
+    "ListingsId": [
+      "VoAPITestString36",
+      "VoAPI_RANDOM"
+    ],
+    "ZipCode": [
+      "VoAPITestString35",
+      "VoAPI_RANDOM"
+    ],
+    "Country": [
+      "VoAPITestString28",
+      "VoAPI_RANDOM"
+    ],
+    "Path": [
+      "VoAPITestString36",
+      "VoAPI_RANDOM"
+    ],
+    "EnabledTuners": [
+      "Array",
+      [
+        "VoAPITestString34",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "EnableAllTuners": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "NewsCategories": [
+      "Array",
+      [
+        "VoAPITestString30",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "SportsCategories": [
+      "Array",
+      [
+        "VoAPITestString40",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "KidsCategories": [
+      "Array",
+      [
+        "VoAPITestString9",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "MovieCategories": [
+      "Array",
+      [
+        "VoAPITestString42",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "ChannelMappings": [
+      "Array",
+      {
+        "Name": [
+          "VoAPITestString0",
+          "VoAPI_RANDOM"
+        ],
+        "Value": [
+          "VoAPITestString12",
+          "VoAPI_RANDOM"
+        ]
+      },
+      false
+    ],
+    "MoviePrefix": [
+      "VoAPITestString9",
+      "VoAPI_RANDOM"
+    ],
+    "PreferredLanguage": [
+      "VoAPITestString4",
+      "VoAPI_RANDOM"
+    ],
+    "UserAgent": [
+      "VoAPITestString17",
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /LiveTv/ListingProviders/Lineups
+Candidate API Method: Get
+Candidate API Seq: Post /LiveTv/ListingProviders  -->  Get /LiveTv/ListingProviders/Lineups
+Failed API: Post /LiveTv/ListingProviders
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "pw": [
+      "VoAPITestString19",
+      "VoAPI_RANDOM"
+    ],
+    "validateListings": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "validateLogin": [
+      false,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {
+    "Id": [
+      "VoAPITestString43",
+      "VoAPI_RANDOM"
+    ],
+    "Type": [
+      "VoAPITestString37",
+      "VoAPI_RANDOM"
+    ],
+    "Username": [
+      "VoAPITestString21",
+      "VoAPI_RANDOM"
+    ],
+    "Password": [
+      "VoAPITestString37",
+      "VoAPI_RANDOM"
+    ],
+    "ListingsId": [
+      "VoAPITestString27",
+      "VoAPI_RANDOM"
+    ],
+    "ZipCode": [
+      "VoAPITestString37",
+      "VoAPI_RANDOM"
+    ],
+    "Country": [
+      "VoAPITestString1",
+      "VoAPI_RANDOM"
+    ],
+    "Path": [
+      "VoAPITestString41",
+      "VoAPI_RANDOM"
+    ],
+    "EnabledTuners": [
+      "Array",
+      [
+        "VoAPITestString42",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "EnableAllTuners": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "NewsCategories": [
+      "Array",
+      [
+        "VoAPITestString37",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "SportsCategories": [
+      "Array",
+      [
+        "VoAPITestString6",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "KidsCategories": [
+      "Array",
+      [
+        "VoAPITestString27",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "MovieCategories": [
+      "Array",
+      [
+        "VoAPITestString21",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "ChannelMappings": [
+      "Array",
+      {
+        "Name": [
+          "VoAPITestString9",
+          "VoAPI_RANDOM"
+        ],
+        "Value": [
+          "VoAPITestString9",
+          "VoAPI_RANDOM"
+        ]
+      },
+      false
+    ],
+    "MoviePrefix": [
+      "VoAPITestString5",
+      "VoAPI_RANDOM"
+    ],
+    "PreferredLanguage": [
+      "VoAPITestString36",
+      "VoAPI_RANDOM"
+    ],
+    "UserAgent": [
+      "VoAPITestString41",
+      "VoAPI_RANDOM"
+    ]
+  }
+}

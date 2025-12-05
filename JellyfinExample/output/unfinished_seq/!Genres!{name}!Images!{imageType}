@@ -1,0 +1,368 @@
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /Genres/{name}/Images/{imageType}
+Candidate API Method: Get
+Candidate API Seq: Get /Genres  -->  Get /Genres/{name}/Images/{imageType}
+Failed API: Get /Genres
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "startIndex": [
+      32,
+      "VoAPI_RANDOM"
+    ],
+    "limit": [
+      19,
+      "VoAPI_RANDOM"
+    ],
+    "searchTerm": [
+      "VoAPITestString34",
+      "VoAPI_RANDOM"
+    ],
+    "parentId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d36",
+      "VoAPI_RANDOM"
+    ],
+    "fields": [
+      "Array",
+      [
+        "AirTime",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString24",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "includeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString26",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "isFavorite": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "imageTypeLimit": [
+      3,
+      "VoAPI_RANDOM"
+    ],
+    "enableImageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "userId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d48",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWithOrGreater": [
+      "VoAPITestString22",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWith": [
+      "VoAPITestString23",
+      "VoAPI_RANDOM"
+    ],
+    "nameLessThan": [
+      "VoAPITestString38",
+      "VoAPI_RANDOM"
+    ],
+    "enableImages": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "enableTotalRecordCount": [
+      true,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /Genres/{name}/Images/{imageType}
+Candidate API Method: Head
+Candidate API Seq: Get /Genres  -->  Head /Genres/{name}/Images/{imageType}
+Failed API: Get /Genres
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "startIndex": [
+      32,
+      "VoAPI_RANDOM"
+    ],
+    "limit": [
+      19,
+      "VoAPI_RANDOM"
+    ],
+    "searchTerm": [
+      "VoAPITestString34",
+      "VoAPI_RANDOM"
+    ],
+    "parentId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d36",
+      "VoAPI_RANDOM"
+    ],
+    "fields": [
+      "Array",
+      [
+        "AirTime",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString24",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "includeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString26",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "isFavorite": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "imageTypeLimit": [
+      3,
+      "VoAPI_RANDOM"
+    ],
+    "enableImageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "userId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d48",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWithOrGreater": [
+      "VoAPITestString22",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWith": [
+      "VoAPITestString23",
+      "VoAPI_RANDOM"
+    ],
+    "nameLessThan": [
+      "VoAPITestString38",
+      "VoAPI_RANDOM"
+    ],
+    "enableImages": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "enableTotalRecordCount": [
+      true,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /Genres/{name}/Images/{imageType}
+Candidate API Method: Get
+Candidate API Seq: Get /Genres  -->  Get /Genres/{name}/Images/{imageType}
+Failed API: Get /Genres
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "startIndex": [
+      30,
+      "VoAPI_RANDOM"
+    ],
+    "limit": [
+      4,
+      "VoAPI_RANDOM"
+    ],
+    "searchTerm": [
+      "VoAPITestString6",
+      "VoAPI_RANDOM"
+    ],
+    "parentId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d30",
+      "VoAPI_RANDOM"
+    ],
+    "fields": [
+      "Array",
+      [
+        "AirTime",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString28",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "includeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString28",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "isFavorite": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "imageTypeLimit": [
+      22,
+      "VoAPI_RANDOM"
+    ],
+    "enableImageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "userId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d47",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWithOrGreater": [
+      "VoAPITestString16",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWith": [
+      "VoAPITestString31",
+      "VoAPI_RANDOM"
+    ],
+    "nameLessThan": [
+      "VoAPITestString23",
+      "VoAPI_RANDOM"
+    ],
+    "enableImages": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "enableTotalRecordCount": [
+      true,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /Genres/{name}/Images/{imageType}
+Candidate API Method: Head
+Candidate API Seq: Get /Genres  -->  Head /Genres/{name}/Images/{imageType}
+Failed API: Get /Genres
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "startIndex": [
+      30,
+      "VoAPI_RANDOM"
+    ],
+    "limit": [
+      4,
+      "VoAPI_RANDOM"
+    ],
+    "searchTerm": [
+      "VoAPITestString6",
+      "VoAPI_RANDOM"
+    ],
+    "parentId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d30",
+      "VoAPI_RANDOM"
+    ],
+    "fields": [
+      "Array",
+      [
+        "AirTime",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString28",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "includeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString28",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "isFavorite": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "imageTypeLimit": [
+      22,
+      "VoAPI_RANDOM"
+    ],
+    "enableImageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "userId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d47",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWithOrGreater": [
+      "VoAPITestString16",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWith": [
+      "VoAPITestString31",
+      "VoAPI_RANDOM"
+    ],
+    "nameLessThan": [
+      "VoAPITestString23",
+      "VoAPI_RANDOM"
+    ],
+    "enableImages": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "enableTotalRecordCount": [
+      true,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}

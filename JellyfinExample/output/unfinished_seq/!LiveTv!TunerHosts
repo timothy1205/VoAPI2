@@ -1,0 +1,112 @@
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /LiveTv/TunerHosts
+Candidate API Method: Delete
+Candidate API Seq: Post /LiveTv/TunerHosts  -->  Delete /LiveTv/TunerHosts
+Failed API: Post /LiveTv/TunerHosts
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "Id": [
+      "VoAPITestString19",
+      "VoAPI_RANDOM"
+    ],
+    "Url": [
+      "VoAPITestString41",
+      "VoAPI_RANDOM"
+    ],
+    "Type": [
+      "VoAPITestString10",
+      "VoAPI_RANDOM"
+    ],
+    "DeviceId": [
+      "VoAPITestString5",
+      "VoAPI_RANDOM"
+    ],
+    "FriendlyName": [
+      "VoAPITestString9",
+      "VoAPI_RANDOM"
+    ],
+    "ImportFavoritesOnly": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "AllowHWTranscoding": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "EnableStreamLooping": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "Source": [
+      "VoAPITestString9",
+      "VoAPI_RANDOM"
+    ],
+    "TunerCount": [
+      18,
+      "VoAPI_RANDOM"
+    ],
+    "UserAgent": [
+      "VoAPITestString21",
+      "VoAPI_RANDOM"
+    ]
+  }
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /LiveTv/TunerHosts
+Candidate API Method: Delete
+Candidate API Seq: Post /LiveTv/TunerHosts  -->  Delete /LiveTv/TunerHosts
+Failed API: Post /LiveTv/TunerHosts
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {},
+  "body": {
+    "Id": [
+      "VoAPITestString27",
+      "VoAPI_RANDOM"
+    ],
+    "Url": [
+      "VoAPITestString18",
+      "VoAPI_RANDOM"
+    ],
+    "Type": [
+      "VoAPITestString39",
+      "VoAPI_RANDOM"
+    ],
+    "DeviceId": [
+      "VoAPITestString14",
+      "VoAPI_RANDOM"
+    ],
+    "FriendlyName": [
+      "VoAPITestString7",
+      "VoAPI_RANDOM"
+    ],
+    "ImportFavoritesOnly": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "AllowHWTranscoding": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "EnableStreamLooping": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "Source": [
+      "VoAPITestString38",
+      "VoAPI_RANDOM"
+    ],
+    "TunerCount": [
+      35,
+      "VoAPI_RANDOM"
+    ],
+    "UserAgent": [
+      "VoAPITestString30",
+      "VoAPI_RANDOM"
+    ]
+  }
+}

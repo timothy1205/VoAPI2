@@ -1,0 +1,40 @@
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /Devices/Info
+Candidate API Method: Get
+Candidate API Seq: Get /Devices  -->  Get /Devices/Info
+Failed API: Get /Devices
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "supportsSync": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "userId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d15",
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /Devices/Info
+Candidate API Method: Get
+Candidate API Seq: Get /Devices  -->  Get /Devices/Info
+Failed API: Get /Devices
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "supportsSync": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "userId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d43",
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}
