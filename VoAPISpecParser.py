@@ -39,7 +39,7 @@ def publish_restler_bin(voapi_compiler_dir, voapi_compiler_output_dir):
     if not os.path.exists("global.json"):
         set_global_json()
     fsproj = voapi_compiler_dir + os.path.sep + "Restler.CompilerExe" + os.path.sep + "Restler.CompilerExe.fsproj"
-    subprocess.run(["dotnet", "publish", fsproj, "--no-restore", "-o", voapi_compiler_output_dir, "-c", "release", "-f", "net6.0"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    subprocess.run(["dotnet", "publish", fsproj, "--no-restore", "-o", voapi_compiler_output_dir, "-c", "release", "-f", "net6.0"])
 
 def compile_api_spec(api_spec, voapi_compiler_output_dir):
     # set config.json
@@ -72,7 +72,7 @@ def compile_api_spec(api_spec, voapi_compiler_output_dir):
     if not os.path.exists("global.json"):
         set_global_json()
     restler_dll = voapi_compiler_output_dir + os.path.sep + "Restler.CompilerExe.dll"
-    subprocess.run(["dotnet", restler_dll, config_json_file], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    subprocess.run(["dotnet", restler_dll, config_json_file])
 
 def main():
     parser = argparse.ArgumentParser()
