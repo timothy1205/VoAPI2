@@ -1,0 +1,3772 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Casdoor API",
+    "description": "Documentation of Casdoor API",
+    "contact": {
+      "email": "admin@casbin.org"
+    },
+    "version": "1.13.0"
+  },
+  "servers": [
+    {
+      "url": "/"
+    }
+  ],
+  "paths": {
+    "/.well-known/openid-configuration": {
+      "get": {
+        "tags": ["OIDC API"],
+        "description": "Get Oidc Discovery",
+        "operationId": "RootController.GetOidcDiscovery",
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/object.OidcDiscovery"
+            }
+          }
+        }
+      }
+    },
+    "/api/add-application": {
+      "post": {
+        "tags": ["Application API"],
+        "description": "add an application",
+        "operationId": "ApiController.AddApplication",
+        "requestBody": {
+          "description": "The details of the application",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Application"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/add-cert": {
+      "post": {
+        "tags": ["Cert API"],
+        "description": "add cert",
+        "operationId": "ApiController.AddCert",
+        "requestBody": {
+          "description": "The details of the cert",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Cert"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/add-ldap": {
+      "post": {
+        "tags": ["Account API"],
+        "description": "add ldap",
+        "operationId": "ApiController.AddLdap",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The details of the ldap",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "schema": {
+              "$ref": "#/definitions/controllers.Response"
+            }
+          }
+        }
+      }
+    },
+    "/api/add-organization": {
+      "post": {
+        "tags": ["Organization API"],
+        "description": "add organization",
+        "operationId": "ApiController.AddOrganization",
+        "requestBody": {
+          "description": "The details of the organization",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Organization"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/add-permission": {
+      "post": {
+        "tags": ["Permission API"],
+        "description": "add permission",
+        "operationId": "ApiController.AddPermission",
+        "requestBody": {
+          "description": "The details of the permission",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Permission"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/add-provider": {
+      "post": {
+        "tags": ["Provider API"],
+        "description": "add provider",
+        "operationId": "ApiController.AddProvider",
+        "requestBody": {
+          "description": "The details of the provider",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Provider"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/add-resource": {
+      "post": {
+        "tags": ["Resource API"],
+        "operationId": "ApiController.AddResource",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "resource",
+            "description": "Resource object",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success or error",
+            "schema": {
+              "$ref": "#/definitions/controllers.Response"
+            }
+          }
+        }
+      }
+    },
+    "/api/add-role": {
+      "post": {
+        "tags": ["Role API"],
+        "description": "add role",
+        "operationId": "ApiController.AddRole",
+        "requestBody": {
+          "description": "The details of the role",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Role"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/add-syncer": {
+      "post": {
+        "tags": ["Syncer API"],
+        "description": "add syncer",
+        "operationId": "ApiController.AddSyncer",
+        "requestBody": {
+          "description": "The details of the syncer",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Syncer"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/add-token": {
+      "post": {
+        "tags": ["Token API"],
+        "description": "add token",
+        "operationId": "ApiController.AddToken",
+        "requestBody": {
+          "description": "Details of the token",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Token"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/add-user": {
+      "post": {
+        "tags": ["User API"],
+        "description": "add user",
+        "operationId": "ApiController.AddUser",
+        "requestBody": {
+          "description": "The details of the user",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.User"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/add-webhook": {
+      "post": {
+        "tags": ["Webhook API"],
+        "description": "add webhook",
+        "operationId": "ApiController.AddWebhook",
+        "requestBody": {
+          "description": "The details of the webhook",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Webhook"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/api/get-human-check": {
+      "get": {
+        "tags": ["Login API"],
+        "operationId": "ApiController.GetHumancheck",
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "schema": {
+              "$ref": "#/definitions/controllers.Response"
+            }
+          }
+        }
+      }
+    },
+    "/api/reset-email-or-phone": {
+      "post": {
+        "tags": ["Account API"],
+        "operationId": "ApiController.ResetEmailOrPhone",
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "schema": {
+              "$ref": "#/definitions/object.Userinfo"
+            }
+          }
+        }
+      }
+    },
+
+    "/api/api/send-email": {
+      "post": {
+        "tags": ["Service API"],
+        "description": "This API is not for Casdoor frontend to call, it is for Casdoor SDKs.",
+        "operationId": "ApiController.SendEmail",
+        "parameters": [
+          {
+            "name": "clientId",
+            "in": "query",
+            "description": "The clientId of the application",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "clientSecret",
+            "in": "query",
+            "description": "The clientSecret of the application",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Details of the email request",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/emailForm"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/api/send-sms": {
+      "post": {
+        "tags": ["Service API"],
+        "description": "This API is not for Casdoor frontend to call, it is for Casdoor SDKs.",
+        "operationId": "ApiController.SendSms",
+        "parameters": [
+          {
+            "name": "clientId",
+            "in": "query",
+            "description": "The clientId of the application",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "clientSecret",
+            "in": "query",
+            "description": "The clientSecret of the application",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Details of the sms request",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/smsForm"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/certs": {
+      "get": {
+        "tags": ["OIDC API"],
+        "operationId": "RootController.GetOidcCert",
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "schema": {
+              "$ref": "#/definitions/object.Cert"
+            }
+          }
+        }
+      }
+    },
+    "/api/check-ldap-users-exist": {
+      "post": {
+        "tags": ["Account API"],
+        "operationId": "ApiController.CheckLdapUserExist",
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "schema": {
+              "$ref": "#/definitions/object.Cert"
+            }
+          }
+        }
+      }
+    },
+    "/api/check-user-password": {
+      "post": {
+        "tags": ["User API"],
+        "operationId": "ApiController.CheckUserPassword",
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "schema": {
+              "$ref": "#/definitions/object.Cert"
+            }
+          }
+        }
+      }
+    },
+    "/api/delete-application": {
+      "post": {
+        "tags": ["Application API"],
+        "description": "delete an application",
+        "operationId": "ApiController.DeleteApplication",
+        "requestBody": {
+          "description": "The details of the application",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Application"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/delete-cert": {
+      "post": {
+        "tags": ["Cert API"],
+        "description": "delete cert",
+        "operationId": "ApiController.DeleteCert",
+        "requestBody": {
+          "description": "The details of the cert",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Cert"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/delete-ldap": {
+      "post": {
+        "tags": ["Account API"],
+        "operationId": "ApiController.DeleteLdap",
+ "responses": {
+                    "200": {
+                        "description": "The Response object",
+                        "schema": {
+                            "$ref": "#/definitions/object.Cert"
+                        }
+                    }
+                }
+      }
+    },
+    "/api/delete-organization": {
+      "post": {
+        "tags": ["Organization API"],
+        "description": "delete organization",
+        "operationId": "ApiController.DeleteOrganization",
+        "requestBody": {
+          "description": "The details of the organization",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Organization"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/delete-permission": {
+      "post": {
+        "tags": ["Permission API"],
+        "description": "delete permission",
+        "operationId": "ApiController.DeletePermission",
+        "requestBody": {
+          "description": "The details of the permission",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Permission"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/delete-provider": {
+      "post": {
+        "tags": ["Provider API"],
+        "description": "delete provider",
+        "operationId": "ApiController.DeleteProvider",
+        "requestBody": {
+          "description": "The details of the provider",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Provider"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/delete-resource": {
+      "post": {
+        "tags": ["Resource API"],
+        "operationId": "ApiController.DeleteResource",
+         "responses": {
+                    "200": {
+                        "description": "The Response object",
+                        "schema": {
+                            "$ref": "#/definitions/object.Cert"
+                        }
+                    }
+                }
+      }
+    },
+    "/api/delete-role": {
+      "post": {
+        "tags": ["Role API"],
+        "description": "delete role",
+        "operationId": "ApiController.DeleteRole",
+        "requestBody": {
+          "description": "The details of the role",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Role"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/delete-syncer": {
+      "post": {
+        "tags": ["Syncer API"],
+        "description": "delete syncer",
+        "operationId": "ApiController.DeleteSyncer",
+        "requestBody": {
+          "description": "The details of the syncer",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Syncer"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/delete-token": {
+      "post": {
+        "tags": ["Token API"],
+        "description": "delete token",
+        "operationId": "ApiController.DeleteToken",
+        "requestBody": {
+          "description": "Details of the token",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Token"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/delete-user": {
+      "post": {
+        "tags": ["User API"],
+        "description": "delete user",
+        "operationId": "ApiController.DeleteUser",
+        "requestBody": {
+          "description": "The details of the user",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.User"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/delete-webhook": {
+      "post": {
+        "tags": ["Webhook API"],
+        "description": "delete webhook",
+        "operationId": "ApiController.DeleteWebhook",
+        "requestBody": {
+          "description": "The details of the webhook",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Webhook"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/get-account": {
+      "get": {
+        "tags": ["Account API"],
+        "description": "get the details of the current account",
+        "operationId": "ApiController.GetAccount",
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-application": {
+      "get": {
+        "tags": ["Application API"],
+        "description": "get the detail of an application",
+        "operationId": "ApiController.GetApplication",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the application.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/object.Application"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-applications": {
+      "get": {
+        "tags": ["Application API"],
+        "description": "get all applications",
+        "operationId": "ApiController.GetApplications",
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "query",
+            "description": "The owner of applications.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/object.Application"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-cert": {
+      "get": {
+        "tags": ["Cert API"],
+        "description": "get cert",
+        "operationId": "ApiController.GetCert",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the cert",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/object.Cert"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-certs": {
+      "get": {
+        "tags": ["Cert API"],
+        "description": "get certs",
+        "operationId": "ApiController.GetCerts",
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "query",
+            "description": "The owner of certs",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/object.Cert"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-email-and-phone": {
+      "post": {
+        "tags": ["User API"],
+        "description": "get email and phone by username",
+        "operationId": "ApiController.GetEmailAndPhone",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": ["organization", "username"],
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string",
+                    "description": "The username of the user"
+                  },
+                  "organization": {
+                    "type": "string",
+                    "description": "The organization of the user"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-global-users": {
+      "get": {
+        "tags": ["User API"],
+        "description": "get global users",
+        "operationId": "ApiController.GetGlobalUsers",
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/object.User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-ldap": {
+      "post": {
+        "tags": ["Account API"],
+        "operationId": "ApiController.GetLdap",
+         "responses": {
+                    "200": {
+                        "description": "The Response object",
+                        "schema": {
+                            "$ref": "#/definitions/object.Cert"
+                        }
+                    }
+                }
+      }
+    },
+    "/api/get-ldap-user": {
+      "post": {
+        "tags": ["Account API"],
+        "operationId": "ApiController.GetLdapser",
+         "responses": {
+                    "200": {
+                        "description": "The Response object",
+                        "schema": {
+                            "$ref": "#/definitions/object.Cert"
+                        }
+                    }
+                }
+      }
+    },
+    "/api/get-ldaps": {
+      "post": {
+        "tags": ["Account API"],
+        "operationId": "ApiController.GetLdaps",
+         "responses": {
+                    "200": {
+                        "description": "The Response object",
+                        "schema": {
+                            "$ref": "#/definitions/object.Cert"
+                        }
+                    }
+                }
+      }
+    },
+    "/api/get-organization": {
+      "get": {
+        "tags": ["Organization API"],
+        "description": "get organization",
+        "operationId": "ApiController.GetOrganization",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "organization id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/object.Organization"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-organizations": {
+      "get": {
+        "tags": ["Organization API"],
+        "description": "get organizations",
+        "operationId": "ApiController.GetOrganizations",
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "query",
+            "description": "owner",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/object.Organization"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-permission": {
+      "get": {
+        "tags": ["Permission API"],
+        "description": "get permission",
+        "operationId": "ApiController.GetPermission",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the permission",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/object.Permission"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-permissions": {
+      "get": {
+        "tags": ["Permission API"],
+        "description": "get permissions",
+        "operationId": "ApiController.GetPermissions",
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "query",
+            "description": "The owner of permissions",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/object.Permission"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-provider": {
+      "get": {
+        "tags": ["Provider API"],
+        "description": "get provider",
+        "operationId": "ApiController.GetProvider",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the provider",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/object.Provider"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-providers": {
+      "get": {
+        "tags": ["Provider API"],
+        "description": "get providers",
+        "operationId": "ApiController.GetProviders",
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "query",
+            "description": "The owner of providers",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/object.Provider"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-records": {
+      "get": {
+        "tags": ["Record API"],
+        "description": "get all records",
+        "operationId": "ApiController.GetRecords",
+        "parameters": [
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "The size of each page",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "p",
+            "in": "query",
+            "description": "The number of the page",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/object.Records"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-records-filter": {
+      "post": {
+        "tags": ["Record API"],
+        "description": "get records by filter",
+        "operationId": "ApiController.GetRecordsByFilter",
+        "requestBody": {
+          "description": "filter Record message",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Records"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/object.Records"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/get-resource": {
+      "get": {
+        "tags": ["Resource API"],
+        "operationId": "ApiController.GetResource",
+         "responses": {
+                    "200": {
+                        "description": "The Response object",
+                        "schema": {
+                            "$ref": "#/definitions/object.Cert"
+                        }
+                    }
+                }
+      }
+    },
+    "/api/get-resources": {
+      "get": {
+        "tags": ["Resource API"],
+        "operationId": "ApiController.GetResources",
+         "responses": {
+                    "200": {
+                        "description": "The Response object",
+                        "schema": {
+                            "$ref": "#/definitions/object.Cert"
+                        }
+                    }
+                }
+      }
+    },
+    "/api/get-role": {
+      "get": {
+        "tags": ["Role API"],
+        "description": "get role",
+        "operationId": "ApiController.GetRole",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the role",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/object.Role"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-roles": {
+      "get": {
+        "tags": ["Role API"],
+        "description": "get roles",
+        "operationId": "ApiController.GetRoles",
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "query",
+            "description": "The owner of roles",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/object.Role"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-sorted-users": {
+      "get": {
+        "tags": ["User API"],
+        "operationId": "ApiController.GetSortedUsers",
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "query",
+            "description": "The owner of users",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sorter",
+            "in": "query",
+            "description": "The DB column name to sort by, e.g., created_time",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "The count of users to return, e.g., 25",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/object.User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-syncer": {
+      "get": {
+        "tags": ["Syncer API"],
+        "description": "get syncer",
+        "operationId": "ApiController.GetSyncer",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the syncer",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/object.Syncer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-syncers": {
+      "get": {
+        "tags": ["Syncer API"],
+        "description": "get syncers",
+        "operationId": "ApiController.GetSyncers",
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "query",
+            "description": "The owner of syncers",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/object.Syncer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-token": {
+      "get": {
+        "tags": ["Token API"],
+        "description": "get token",
+        "operationId": "ApiController.GetToken",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/object.Token"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-tokens": {
+      "get": {
+        "tags": ["Token API"],
+        "description": "get tokens",
+        "operationId": "ApiController.GetTokens",
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "query",
+            "description": "The owner of tokens",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "The size of each page",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "p",
+            "in": "query",
+            "description": "The number of the page",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/object.Token"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-user": {
+      "get": {
+        "tags": ["User API"],
+        "description": "get user",
+        "operationId": "ApiController.GetUser",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the user",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/object.User"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-user-application": {
+      "get": {
+        "tags": ["Application API"],
+        "description": "get the detail of the user's application",
+        "operationId": "ApiController.GetUserApplication",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the user",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/object.Application"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-user-count": {
+      "get": {
+        "tags": ["User API"],
+        "operationId": "ApiController.GetUserCount",
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "query",
+            "description": "The owner of users",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "isOnline",
+            "in": "query",
+            "description": "The filter for query, 1 for online, 0 for offline, empty string for all users",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "{int} int The count of filtered users for an organization",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/api/get-users": {
+      "get": {
+        "tags": ["User API"],
+        "operationId": "ApiController.GetUsers",
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "query",
+            "description": "The owner of users",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/object.User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-webhook": {
+      "get": {
+        "tags": ["Webhook API"],
+        "description": "get webhook",
+        "operationId": "ApiController.GetWebhook",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the webhook",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/object.Webhook"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/get-webhooks": {
+      "get": {
+        "tags": ["Webhook API"],
+        "description": "get webhooks",
+        "operationId": "ApiController.GetWebhooks",
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "query",
+            "description": "The owner of webhooks",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/object.Webhook"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/login": {
+      "post": {
+        "tags": ["Login API"],
+        "description": "login",
+        "operationId": "ApiController.Login",
+        "parameters": [
+          {
+            "name": "oAuthParams",
+            "in": "query",
+            "description": "oAuth parameters",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Login information",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestForm"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.api_controller.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/login/oauth/access_token": {
+      "post": {
+        "tags": ["Token API"],
+        "description": "get OAuth access token",
+        "operationId": "ApiController.GetOAuthToken",
+        "parameters": [
+          {
+            "name": "grant_type",
+            "in": "query",
+            "description": "OAuth grant type",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "client_id",
+            "in": "query",
+            "description": "OAuth client id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "client_secret",
+            "in": "query",
+            "description": "OAuth client secret",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "code",
+            "in": "query",
+            "description": "OAuth code",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/object.TokenWrapper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/login/oauth/code": {
+      "post": {
+        "tags": ["Token API"],
+        "description": "get OAuth code",
+        "operationId": "ApiController.GetOAuthCode",
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "query",
+            "description": "The id of user",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "client_id",
+            "in": "query",
+            "description": "OAuth client id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "response_type",
+            "in": "query",
+            "description": "OAuth response type",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "redirect_uri",
+            "in": "query",
+            "description": "OAuth redirect URI",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "scope",
+            "in": "query",
+            "description": "OAuth scope",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "state",
+            "in": "query",
+            "description": "OAuth state",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/object.TokenWrapper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/login/oauth/refresh_token": {
+      "post": {
+        "description": "refresh OAuth access token",
+        "operationId": "ApiController.RefreshToken",
+        "parameters": [
+          {
+            "name": "grant_type",
+            "in": "query",
+            "description": "OAuth grant type",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "refresh_token",
+            "in": "query",
+            "description": "OAuth refresh token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "scope",
+            "in": "query",
+            "description": "OAuth scope",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "client_id",
+            "in": "query",
+            "description": "OAuth client id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "client_secret",
+            "in": "query",
+            "description": "OAuth client secret",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/object.TokenWrapper"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/logout": {
+      "post": {
+        "tags": ["Login API"],
+        "description": "logout the current user",
+        "operationId": "ApiController.Logout",
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/send-verification-code": {
+      "post": {
+        "tags": ["Verification API"],
+        "operationId": "ApiController.SendVerificationCode",
+         "responses": {
+                    "200": {
+                        "description": "The Response object",
+                        "schema": {
+                            "$ref": "#/definitions/object.Cert"
+                        }
+                    }
+                }
+      }
+    },
+    "/api/set-password": {
+      "post": {
+        "tags": ["Account API"],
+        "description": "set password",
+        "operationId": "ApiController.SetPassword",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "newPassword",
+                  "oldPassword",
+                  "userName",
+                  "userOwner"
+                ],
+                "type": "object",
+                "properties": {
+                  "userOwner": {
+                    "type": "string",
+                    "description": "The owner of the user"
+                  },
+                  "userName": {
+                    "type": "string",
+                    "description": "The name of the user"
+                  },
+                  "oldPassword": {
+                    "type": "string",
+                    "description": "The old password of the user"
+                  },
+                  "newPassword": {
+                    "type": "string",
+                    "description": "The new password of the user"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/signup": {
+      "post": {
+        "tags": ["Login API"],
+        "description": "sign up a new user",
+        "operationId": "ApiController.Signup",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": ["password", "username"],
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string",
+                    "description": "The username to sign up"
+                  },
+                  "password": {
+                    "type": "string",
+                    "description": "The password"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sync-ldap-users": {
+      "post": {
+        "tags": ["Account API"],
+        "operationId": "ApiController.SyncLdapUsers",
+         "responses": {
+                    "200": {
+                        "description": "The Response object",
+                        "schema": {
+                            "$ref": "#/definitions/object.Cert"
+                        }
+                    }
+                }
+      }
+    },
+    "/api/unlink": {
+      "post": {
+        "tags": ["Login API"],
+         "responses": {
+                    "200": {
+                        "description": "The Response object",
+                        "schema": {
+                            "$ref": "#/definitions/object.Cert"
+                        }
+                    }
+                }
+      }
+    },
+    "/api/update-application": {
+      "get": {
+        "tags": ["Login API"],
+        "description": "get application login",
+        "operationId": "ApiController.GetApplicationLogin",
+        "parameters": [
+          {
+            "name": "clientId",
+            "in": "query",
+            "description": "client id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "responseType",
+            "in": "query",
+            "description": "response type",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "redirectUri",
+            "in": "query",
+            "description": "redirect uri",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "scope",
+            "in": "query",
+            "description": "scope",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "state",
+            "in": "query",
+            "description": "state",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.api_controller.Response"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": ["Application API"],
+        "description": "update an application",
+        "operationId": "ApiController.UpdateApplication",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the application",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The details of the application",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Application"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/update-cert": {
+      "post": {
+        "tags": ["Cert API"],
+        "description": "update cert",
+        "operationId": "ApiController.UpdateCert",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the cert",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The details of the cert",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Cert"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/update-ldap": {
+      "post": {
+        "tags": ["Account API"],
+        "operationId": "ApiController.UpdateLdap",
+         "responses": {
+                    "200": {
+                        "description": "The Response object",
+                        "schema": {
+                            "$ref": "#/definitions/object.Cert"
+                        }
+                    }
+                }
+      }
+    },
+    "/api/update-organization": {
+      "post": {
+        "tags": ["Organization API"],
+        "description": "update organization",
+        "operationId": "ApiController.UpdateOrganization",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the organization",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The details of the organization",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Organization"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/update-permission": {
+      "post": {
+        "tags": ["Permission API"],
+        "description": "update permission",
+        "operationId": "ApiController.UpdatePermission",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the permission",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The details of the permission",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Permission"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/update-provider": {
+      "post": {
+        "tags": ["Provider API"],
+        "description": "update provider",
+        "operationId": "ApiController.UpdateProvider",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the provider",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The details of the provider",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Provider"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/update-resource": {
+      "post": {
+        "tags": ["Resource API"],
+        "operationId": "ApiController.UpdateResource",
+         "responses": {
+                    "200": {
+                        "description": "The Response object",
+                        "schema": {
+                            "$ref": "#/definitions/object.Cert"
+                        }
+                    }
+                }
+      }
+    },
+    "/api/update-role": {
+      "post": {
+        "tags": ["Role API"],
+        "description": "update role",
+        "operationId": "ApiController.UpdateRole",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the role",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The details of the role",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Role"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/update-syncer": {
+      "post": {
+        "tags": ["Syncer API"],
+        "description": "update syncer",
+        "operationId": "ApiController.UpdateSyncer",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the syncer",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The details of the syncer",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Syncer"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/update-token": {
+      "post": {
+        "tags": ["Token API"],
+        "description": "update token",
+        "operationId": "ApiController.UpdateToken",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of token",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Details of the token",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Token"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/update-user": {
+      "post": {
+        "tags": ["User API"],
+        "description": "update user",
+        "operationId": "ApiController.UpdateUser",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the user",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The details of the user",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.User"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/update-webhook": {
+      "post": {
+        "tags": ["Webhook API"],
+        "description": "update webhook",
+        "operationId": "ApiController.UpdateWebhook",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "The id of the webhook",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The details of the webhook",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/object.Webhook"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Response"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/api/upload-resource": {
+      "post": {
+        "tags": ["Resource API"],
+        "operationId": "ApiController.UploadResource",
+         "responses": {
+                    "200": {
+                        "description": "The Response object",
+                        "schema": {
+                            "$ref": "#/definitions/object.Cert"
+                        }
+                    }
+                }
+      }
+    },
+    "/api/userinfo": {
+      "get": {
+        "tags": ["Account API"],
+        "description": "return user information according to OIDC standards",
+        "operationId": "ApiController.UserInfo",
+        "responses": {
+          "200": {
+            "description": "The Response object",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/controllers.Userinfo"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "RequestForm": {
+        "title": "RequestForm",
+        "type": "object"
+      },
+      "Response": {
+        "title": "Response",
+        "type": "object"
+      },
+      "controllers.Response": {
+        "title": "Response",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "object"
+          },
+          "data2": {
+            "type": "object"
+          },
+          "msg": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "sub": {
+            "type": "string"
+          }
+        }
+      },
+      "controllers.Userinfo": {
+        "title": "Userinfo",
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "string"
+          },
+          "aud": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "iss": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "picture": {
+            "type": "string"
+          },
+          "preferred_username": {
+            "type": "string"
+          },
+          "sub": {
+            "type": "string"
+          }
+        }
+      },
+      "controllers.api_controller.Response": {
+        "title": "Response",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "object"
+          },
+          "data2": {
+            "type": "object"
+          },
+          "msg": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "sub": {
+            "type": "string"
+          }
+        }
+      },
+      "emailForm": {
+        "title": "emailForm",
+        "type": "object"
+      },
+      "object": {
+        "title": "object",
+        "type": "object"
+      },
+      "object.Adapter": {
+        "title": "Adapter",
+        "type": "object",
+        "properties": {
+          "Engine": {
+            "$ref": "#/components/schemas/xorm.Engine"
+          },
+          "dataSourceName": {
+            "type": "string"
+          },
+          "dbName": {
+            "type": "string"
+          },
+          "driverName": {
+            "type": "string"
+          }
+        }
+      },
+      "object.Application": {
+        "title": "Application",
+        "type": "object",
+        "properties": {
+          "affiliationUrl": {
+            "type": "string"
+          },
+          "cert": {
+            "type": "string"
+          },
+          "clientId": {
+            "type": "string"
+          },
+          "clientSecret": {
+            "type": "string"
+          },
+          "createdTime": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "enableCodeSignin": {
+            "type": "boolean"
+          },
+          "enablePassword": {
+            "type": "boolean"
+          },
+          "enableSignUp": {
+            "type": "boolean"
+          },
+          "enableSigninSession": {
+            "type": "boolean"
+          },
+          "expireInHours": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "forgetUrl": {
+            "type": "string"
+          },
+          "homepageUrl": {
+            "type": "string"
+          },
+          "logo": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "organization": {
+            "type": "string"
+          },
+          "organizationObj": {
+            "$ref": "#/components/schemas/object.Organization"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "providers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/object.ProviderItem"
+            }
+          },
+          "redirectUris": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "refreshExpireInHours": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "signinHtml": {
+            "type": "string"
+          },
+          "signinUrl": {
+            "type": "string"
+          },
+          "signupHtml": {
+            "type": "string"
+          },
+          "signupItems": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/object.SignupItem"
+            }
+          },
+          "signupUrl": {
+            "type": "string"
+          },
+          "termsOfUse": {
+            "type": "string"
+          },
+          "tokenFormat": {
+            "type": "string"
+          }
+        }
+      },
+      "object.Cert": {
+        "title": "Cert",
+        "type": "object",
+        "properties": {
+          "bitSize": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "createdTime": {
+            "type": "string"
+          },
+          "cryptoAlgorithm": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "expireInYears": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "privateKey": {
+            "type": "string"
+          },
+          "publicKey": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        }
+      },
+      "object.Header": {
+        "title": "Header",
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      },
+      "object.Organization": {
+        "title": "Organization",
+        "type": "object",
+        "properties": {
+          "createdTime": {
+            "type": "string"
+          },
+          "defaultAvatar": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "enableSoftDeletion": {
+            "type": "boolean"
+          },
+          "favicon": {
+            "type": "string"
+          },
+          "masterPassword": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "passwordSalt": {
+            "type": "string"
+          },
+          "passwordType": {
+            "type": "string"
+          },
+          "phonePrefix": {
+            "type": "string"
+          },
+          "websiteUrl": {
+            "type": "string"
+          }
+        }
+      },
+      "object.Permission": {
+        "title": "Permission",
+        "type": "object",
+        "properties": {
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "createdTime": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "effect": {
+            "type": "string"
+          },
+          "isEnabled": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "resources": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "users": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "object.Provider": {
+        "title": "Provider",
+        "type": "object",
+        "properties": {
+          "appId": {
+            "type": "string"
+          },
+          "bucket": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "clientId": {
+            "type": "string"
+          },
+          "clientId2": {
+            "type": "string"
+          },
+          "clientSecret": {
+            "type": "string"
+          },
+          "clientSecret2": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          },
+          "createdTime": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "domain": {
+            "type": "string"
+          },
+          "enableSignAuthnRequest": {
+            "type": "boolean"
+          },
+          "endpoint": {
+            "type": "string"
+          },
+          "host": {
+            "type": "string"
+          },
+          "idP": {
+            "type": "string"
+          },
+          "intranetEndpoint": {
+            "type": "string"
+          },
+          "issuerUrl": {
+            "type": "string"
+          },
+          "metadata": {
+            "type": "string"
+          },
+          "method": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "port": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "providerUrl": {
+            "type": "string"
+          },
+          "regionId": {
+            "type": "string"
+          },
+          "signName": {
+            "type": "string"
+          },
+          "templateCode": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        }
+      },
+      "object.ProviderItem": {
+        "title": "ProviderItem",
+        "type": "object",
+        "properties": {
+          "alertType": {
+            "type": "string"
+          },
+          "canSignIn": {
+            "type": "boolean"
+          },
+          "canSignUp": {
+            "type": "boolean"
+          },
+          "canUnlink": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "prompted": {
+            "type": "boolean"
+          },
+          "provider": {
+            "$ref": "#/components/schemas/object.Provider"
+          }
+        }
+      },
+      "object.Records": {
+        "title": "Records",
+        "type": "object"
+      },
+      "object.Role": {
+        "title": "Role",
+        "type": "object",
+        "properties": {
+          "createdTime": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "isEnabled": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "users": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "object.SignupItem": {
+        "title": "SignupItem",
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "prompted": {
+            "type": "boolean"
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "rule": {
+            "type": "string"
+          },
+          "visible": {
+            "type": "boolean"
+          }
+        }
+      },
+      "object.Syncer": {
+        "title": "Syncer",
+        "type": "object",
+        "properties": {
+          "affiliationTable": {
+            "type": "string"
+          },
+          "avatarBaseUrl": {
+            "type": "string"
+          },
+          "createdTime": {
+            "type": "string"
+          },
+          "database": {
+            "type": "string"
+          },
+          "databaseType": {
+            "type": "string"
+          },
+          "errorText": {
+            "type": "string"
+          },
+          "host": {
+            "type": "string"
+          },
+          "isEnabled": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "organization": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "port": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "syncInterval": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "table": {
+            "type": "string"
+          },
+          "tableColumns": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/object.TableColumn"
+            }
+          },
+          "tablePrimaryKey": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "user": {
+            "type": "string"
+          }
+        }
+      },
+      "object.TableColumn": {
+        "title": "TableColumn",
+        "type": "object",
+        "properties": {
+          "casdoorName": {
+            "type": "string"
+          },
+          "isHashed": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "values": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "object.Token": {
+        "title": "Token",
+        "type": "object",
+        "properties": {
+          "accessToken": {
+            "type": "string"
+          },
+          "application": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "codeChallenge": {
+            "type": "string"
+          },
+          "createdTime": {
+            "type": "string"
+          },
+          "expiresIn": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string"
+          },
+          "organization": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "refreshToken": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "tokenType": {
+            "type": "string"
+          },
+          "user": {
+            "type": "string"
+          }
+        }
+      },
+      "object.TokenWrapper": {
+        "title": "TokenWrapper",
+        "type": "object",
+        "properties": {
+          "access_token": {
+            "type": "string"
+          },
+          "expires_in": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "id_token": {
+            "type": "string"
+          },
+          "refresh_token": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "token_type": {
+            "type": "string"
+          }
+        }
+      },
+      "object.User": {
+        "title": "User",
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "affiliation": {
+            "type": "string"
+          },
+          "apple": {
+            "type": "string"
+          },
+          "avatar": {
+            "type": "string"
+          },
+          "azuread": {
+            "type": "string"
+          },
+          "baidu": {
+            "type": "string"
+          },
+          "bio": {
+            "type": "string"
+          },
+          "birthday": {
+            "type": "string"
+          },
+          "createdIp": {
+            "type": "string"
+          },
+          "createdTime": {
+            "type": "string"
+          },
+          "dingtalk": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "education": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "facebook": {
+            "type": "string"
+          },
+          "gender": {
+            "type": "string"
+          },
+          "gitee": {
+            "type": "string"
+          },
+          "github": {
+            "type": "string"
+          },
+          "gitlab": {
+            "type": "string"
+          },
+          "google": {
+            "type": "string"
+          },
+          "hash": {
+            "type": "string"
+          },
+          "homepage": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "idCard": {
+            "type": "string"
+          },
+          "idCardType": {
+            "type": "string"
+          },
+          "isAdmin": {
+            "type": "boolean"
+          },
+          "isDefaultAvatar": {
+            "type": "boolean"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "isForbidden": {
+            "type": "boolean"
+          },
+          "isGlobalAdmin": {
+            "type": "boolean"
+          },
+          "isOnline": {
+            "type": "boolean"
+          },
+          "language": {
+            "type": "string"
+          },
+          "lark": {
+            "type": "string"
+          },
+          "lastSigninIp": {
+            "type": "string"
+          },
+          "lastSigninTime": {
+            "type": "string"
+          },
+          "ldap": {
+            "type": "string"
+          },
+          "linkedin": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "passwordSalt": {
+            "type": "string"
+          },
+          "permanentAvatar": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "preHash": {
+            "type": "string"
+          },
+          "properties": {
+            "type": "object"
+          },
+          "qq": {
+            "type": "string"
+          },
+          "ranking": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "region": {
+            "type": "string"
+          },
+          "score": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "signupApplication": {
+            "type": "string"
+          },
+          "slack": {
+            "type": "string"
+          },
+          "tag": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "updatedTime": {
+            "type": "string"
+          },
+          "wechat": {
+            "type": "string"
+          },
+          "wecom": {
+            "type": "string"
+          },
+          "weibo": {
+            "type": "string"
+          }
+        }
+      },
+      "object.Webhook": {
+        "title": "Webhook",
+        "type": "object",
+        "properties": {
+          "contentType": {
+            "type": "string"
+          },
+          "createdTime": {
+            "type": "string"
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "headers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/object.Header"
+            }
+          },
+          "isEnabled": {
+            "type": "boolean"
+          },
+          "isUserExtended": {
+            "type": "boolean"
+          },
+          "method": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "organization": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        }
+      },
+      "smsForm": {
+        "title": "smsForm",
+        "type": "object"
+      },
+      "xorm.Engine": {
+        "title": "Engine",
+        "type": "object"
+      }
+    }
+  },
+  "x-original-swagger-version": "2.0"
+}

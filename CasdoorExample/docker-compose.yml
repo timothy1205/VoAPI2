@@ -1,0 +1,12 @@
+services:
+  casdoor:
+    image: casbin/casdoor-all-in-one:v1.13.0
+    container_name: casdoor
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - casdoor_data:/data
+
+volumes:
+  casdoor_data:
