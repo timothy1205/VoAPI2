@@ -2,6 +2,8 @@ import os, re, sys, copy, time, json, random, requests, functools
 import VoAPITemplate
 from VoAPIGlobalData import *
 from json_ref_dict import materialize, RefDict
+from securebert_ft import SecureBERTEndpointScanner
+from unsloth_ft import get_model_and_tokenizer, generate_response
 
 def resolve_multipart_api(multipart_json):
     multipart_param = ""
@@ -764,47 +766,126 @@ def no_vul_oriented_api_format(api_template_list):
             no_vul_oriented_api_list.append([api_template, test_types])
     return no_vul_oriented_api_list
 
-def candidate_api_extraction(api_template_list):
+def candidate_api_extraction(api_template_list, use_securebert=False, use_llama3=False):
     candidate_api_list = []
-    for api_template in api_template_list:
-        test_types = {}
-        #request_params = get_request_params(api_template.api_request)
-        request_dict = copy.deepcopy(api_template.api_request)
-        del request_dict["path"]
-        request_params = get_consumers_or_producers(request_dict)
-        for api_type in ApiFuncList:
-            if api_type == "upload_api":
-                # ignore here. 
-                # when solve "multipart/form-data", solve upload_api.
+
+    if use_securebert:
+        print("Using SecureBERT for candidate API extraction.")
+        scanner = SecureBERTEndpointScanner()
+        endpoints_to_scan = [api.api_url for api in api_template_list]
+        results = scanner.scan_endpoints(endpoints_to_scan)
+        
+        # Create a map of url -> api_template(s)
+        url_to_templates = {}
+        for api_template in api_template_list:
+            url_to_templates.setdefault(api_template.api_url, []).append(api_template)
+
+        for res in results:
+            test_type = res.get("test_type")
+            if test_type:
+                endpoint_url = res["endpoint"]
+                if endpoint_url in url_to_templates:
+                    for api_template in url_to_templates[endpoint_url]:
+                        request_dict = copy.deepcopy(api_template.api_request)
+                        del request_dict["path"]
+                        request_params = get_consumers_or_producers(request_dict)
+                        string_params = [p for p, t in request_params.items() if t == "String"]
+                        
+                        if string_params:
+                            test_types = {test_type: string_params}
+                            print(f"SecureBERT found: {api_template.api_url} {api_template.api_method} {test_types}")
+                            candidate_api_list.append([api_template, test_types])
+
+    elif use_llama3:
+        print("Using Llama3 for candidate API extraction.")
+        model, tokenizer = get_model_and_tokenizer(model_dir="training_output")
+        
+        for api_template in api_template_list:
+            prompt = (
+                "Extract the CVE identifier, CWE identifiers and any endpoints mentioned "
+                "from the following vulnerability description. Return only JSON.\n\n"
+                "Description:\n"
+                f"API Endpoint: {api_template.api_method} {api_template.api_url}\n\n"
+                "JSON:"
+            )
+            response_str = generate_response(model, tokenizer, prompt)
+            try:
+                response_json = json.loads(response_str)
+                cwe_ids = response_json.get("cwe_ids", [])
+                if cwe_ids:
+                    request_dict = copy.deepcopy(api_template.api_request)
+                    del request_dict["path"]
+                    request_params = get_consumers_or_producers(request_dict)
+                    string_params = [p for p, t in request_params.items() if t == "String"]
+                    
+                    if string_params:
+                        test_types = {}
+                        for cwe in cwe_ids:
+                            if cwe in CWEtoApiFunc:
+                                api_func = CWEtoApiFunc[cwe]
+                                if api_func not in test_types:
+                                    test_types[api_func] = []
+                                test_types[api_func].extend(string_params)
+                        
+                        for api_func in test_types:
+                            test_types[api_func] = list(set(test_types[api_func]))
+
+                        if test_types:
+                            print(f"Llama3 found: {api_template.api_url} {api_template.api_method} {test_types}")
+                            # Avoid duplicates if also found by securebert
+                            found = False
+                            for cand_api, _ in candidate_api_list:
+                                if cand_api.api_url == api_template.api_url and cand_api.api_method == api_template.api_method:
+                                    found = True
+                                    break
+                            if not found:
+                                candidate_api_list.append([api_template, test_types])
+            except (json.JSONDecodeError, TypeError):
                 continue
-            path_flag = False
-            param_flag = False
-            tag_params = []
-            for api_path_keyword in ApiPathKeywords[api_type]:
-                if api_path_keyword in api_template.api_url.lower():
-                    path_flag = True
-                    break
-            for request_param in request_params:
-                for api_param_keyword in ApiParamKeywords[api_type]:
-                    if (api_param_keyword in request_param.lower()) and (request_params[request_param] == "String"):
-                        if request_param not in tag_params:
-                            tag_params.append(request_param)
-                        param_flag = True
+
+    else:
+        # Original keyword-based extraction
+        for api_template in api_template_list:
+            test_types = {}
+            request_dict = copy.deepcopy(api_template.api_request)
+            del request_dict["path"]
+            request_params = get_consumers_or_producers(request_dict)
+            for api_type in ApiFuncList:
+                if api_type == "upload_api":
+                    # ignore here. 
+                    # when solve "multipart/form-data", solve upload_api.
+                    continue
+                path_flag = False
+                param_flag = False
+                tag_params = []
+                for api_path_keyword in ApiPathKeywords[api_type]:
+                    if api_path_keyword in api_template.api_url.lower():
+                        path_flag = True
                         break
-            if path_flag and (not param_flag):
-                test_types[api_type] = []
                 for request_param in request_params:
-                    if request_params[request_param] == "String":
-                        test_types[api_type].append(request_param)
-            if param_flag:
-                test_types[api_type] = tag_params
-        temp_dict = copy.deepcopy(test_types)
-        for test_type in temp_dict:
-            if not temp_dict[test_type]:
-                del test_types[test_type]
-        if test_types:
-            #print(api_template.api_url, api_template.api_method, test_types)
-            candidate_api_list.append([api_template, test_types])
+                    for api_param_keyword in ApiParamKeywords[api_type]:
+                        if (api_param_keyword in request_param.lower()) and (request_params[request_param] == "String"):
+                            if request_param not in tag_params:
+                                tag_params.append(request_param)
+                            param_flag = True
+                            break
+                if path_flag and (not param_flag):
+                    test_types[api_type] = []
+                    for request_param in request_params:
+                        if request_params[request_param] == "String":
+                            test_types[api_type].append(request_param)
+                if param_flag:
+                    test_types[api_type] = tag_params
+            
+            temp_dict = copy.deepcopy(test_types)
+            for test_type in temp_dict:
+                if not temp_dict[test_type]:
+                    del test_types[test_type]
+            
+            if test_types:
+                print(api_template.api_url, api_template.api_method, test_types)
+                candidate_api_list.append([api_template, test_types])
+
     return candidate_api_list
 
 def find_triggers(candidate_api, api_templates):

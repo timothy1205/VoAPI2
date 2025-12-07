@@ -7,7 +7,6 @@ from pathlib import Path
 from typing import Iterable, Dict, Any, List
 
 import torch
-from unsloth import FastLanguageModel
 from trl import SFTTrainer, SFTConfig
 from datasets import load_dataset
 
@@ -145,6 +144,8 @@ def get_model_and_tokenizer(model_dir: str, train_data_path: str = None, retrain
     Loads an existing fine-tuned model from `model_dir` if available.
     Otherwise, trains a new one using `train_data_path`.
     """
+    from unsloth import FastLanguageModel
+
     model_exists = os.path.exists(os.path.join(model_dir, "adapter_config.json"))
     should_train = retrain or not model_exists
 

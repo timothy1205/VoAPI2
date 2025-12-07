@@ -11,3 +11,4 @@ transformers
 tokenizers
 torch
 accelerate
+unsloth

@@ -261,6 +261,9 @@ def main():
     parser.add_argument('--no_get_producer', action="store_true", help='Get Method Can not be Producer, Default: False')
     parser.add_argument('--open_isrequired', action="store_true", help='Whether Open Param isRequired Option or not, Default: False')
     parser.add_argument('--need_trigger', action="store_true", help='Whether Need Trigger API to Trigger Vul, Default: False')
+    parser.add_argument('--securebert', action="store_true", help='Use securebert for parsing candidate apis, Default: False')
+    parser.add_argument('--llama3', action="store_true", help='Use llama3 for parsing candidate apis, Default: False')
+    parser.add_argument('--extract_only', action="store_true", help='Only extract API candidates then stop, Default: False')
     #parser.add_argument('--no_vul_oriented', action="store_true", help='No Need for a Vulnerability-oriented Mechanism., Default: False')
     args = parser.parse_args()
     #start_log_str = "----------------VoAPI Start: " + time.asctime() + "-----------------------\n"
@@ -328,10 +331,9 @@ def main():
                 if (api_template.api_url == add_api_template.api_url) and (api_template.api_method.lower() == add_api_template.api_method.lower()):
                     api_template_list.remove(api_template)
         api_template_list += add_api_templates_list
-    # if args.no_vul_oriented:
-    #     candidate_api_list = no_vul_oriented_api_format(api_template_list)
-    # else:
-    candidate_api_list = candidate_api_extraction(api_template_list)
+
+    candidate_api_list = candidate_api_extraction(api_template_list, args.securebert, args.llama3)
+        
     upload_candidate_api_list = []
     if upload_apis:
         for upload_api in upload_apis:
@@ -349,8 +351,14 @@ def main():
                 if (candidate_api[0].api_url == add_candidate_api[0].api_url) and (candidate_api[0].api_method.lower() == add_candidate_api[0].api_method.lower()):
                     candidate_api_list.remove(candidate_api)
         candidate_api_list = add_candidate_api_list + candidate_api_list
+    
+    if (args.extract_only):
+        api_func_statistics(candidate_api_list)
+        end_log_str = "----------------VoAPI End" + "-----------------------\n"
+        write_log(log_file, end_log_str)
+        return
+
     candidate_apis_test(baseurl, header_dict, param_dict, output_dir, api_template_list, candidate_api_list, api_validity_json, args.no_get_producer, args.open_isrequired, args.need_trigger, log_file)
-    #end_log_str = "----------------VoAPI End: " + time.asctime() + "-----------------------\n"
     end_log_str = "----------------VoAPI End" + "-----------------------\n"
     write_log(log_file, end_log_str)
 

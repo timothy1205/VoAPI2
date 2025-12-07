@@ -68,6 +68,18 @@ APIFuncAndVulMapping = {
 "display_api" : "xss"
 }
 
+CWEtoApiFunc = {
+    "CWE-78": "command_api",   # OS Command Injection
+    "CWE-89": "database_api",  # SQL Injection
+    "CWE-94": "command_api",   # Code Injection (can be command)
+    "CWE-79": "display_api",   # XSS
+    "CWE-80": "display_api",   # XSS
+    "CWE-22": "path_api",      # Path Traversal
+    "CWE-23": "path_api",      # Path Traversal
+    "CWE-918": "proxy_api",    # SSRF
+    "CWE-434": "upload_api",   # Unrestricted Upload of File with Dangerous Type
+}
+
 ApiVulnerabilityPayloads = {
 "proxy_api" : ["http://IP:PORT/ssrf{0}","https://IP:PORT/ssrf{0}"],
 "upload_api" : [],
