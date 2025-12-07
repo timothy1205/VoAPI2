@@ -22,6 +22,10 @@ We've improved our API Specification Parser to enable VoAPI to test more API pro
 Install [Python 3.8.10](https://www.python.org/downloads/) and
 [.NET 6.0](https://dotnet.microsoft.com/download/dotnet-core?utm_source=getdotnetcorecli&utm_medium=referral), for your appropriate OS.
 
+`pip3 install -r requirements.txt`
+
+*NOTE: Use of Unsloth requires Python 3.11 or newer*
+
 ### 1. Parse OpenAPI Spec
 Use VoAPISpecParser.py to parse API documents into our custom restler_compile file.
 
@@ -84,8 +88,6 @@ usage: VoAPITest.py [-h] [--openapi OPENAPI] [--restler_compile RESTLER_COMPILE]
                     [--baseurl BASEURL] [--output OUTPUT] [--upload_payloads_dir UPLOAD_PAYLOADS_DIR] [--api_header_file API_HEADER_FILE]
                     [--api_content_type API_CONTENT_TYPE] [--api_param_file API_PARAM_FILE] [--api_validity_file API_VALIDITY_FILE]
                     [--api_template_file API_TEMPLATE_FILE] [--no_get_producer] [--open_isrequired] [--need_trigger]
-
-optional arguments:
   -h, --help            show this help message and exit
   --openapi OPENAPI     OpenAPI File Path For Resolve "multipart/form-data" to Support Upload API
   --restler_compile RESTLER_COMPILE
