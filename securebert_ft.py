@@ -34,7 +34,6 @@ class SecureBERTEndpointScanner:
         texts = []
         labels = []
         
-        all_vulnerable_endpoints = set()
         records = []
         with open(self.dataset_path, 'r', encoding='utf-8') as f:
             for line in f:
@@ -44,8 +43,8 @@ class SecureBERTEndpointScanner:
                     continue
 
         for record in records:
-            vulnerable_endpoints = record.get("extracted_endpoints", [])
-            if not vulnerable_endpoints:
+            description_endpoints = [ep for ep in record.get("description", "").split() if 'http' in ep or '/' in ep]
+            if not description_endpoints:
                 continue
 
             cwe_ids = record.get("cwe_ids", [])
@@ -58,18 +57,9 @@ class SecureBERTEndpointScanner:
             label_id = self.label2id.get(primary_api_func)
 
             if label_id is not None:
-                for endpoint in vulnerable_endpoints:
+                for endpoint in description_endpoints:
                     texts.append(endpoint)
                     labels.append(label_id)
-                    all_vulnerable_endpoints.add(endpoint)
-
-        # Add SAFE examples
-        for record in records:
-            description_endpoints = [ep for ep in record.get("description", "").split() if 'http' in ep or '/' in ep]
-            for endpoint in description_endpoints:
-                if endpoint not in all_vulnerable_endpoints:
-                    texts.append(endpoint)
-                    labels.append(self.label2id["SAFE"])
 
         if not texts:
             raise ValueError("No valid data for training.")
@@ -100,7 +90,7 @@ class SecureBERTEndpointScanner:
 
         training_args = TrainingArguments(
             output_dir=self.model_save_dir,
-            num_train_epochs=1000,
+            num_train_epochs=5,
             per_device_train_batch_size=16,
             warmup_steps=500,
             weight_decay=0.01,

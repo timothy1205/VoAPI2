@@ -6,16 +6,16 @@ import random
 from pathlib import Path
 from typing import Iterable, Dict, Any, List
 
+# Import unsloth first to patch other libraries
+from unsloth import FastLanguageModel
 import torch
 from trl import SFTTrainer, SFTConfig
 from datasets import load_dataset
-
 
 MAX_SEQ_LENGTH = 2048
 BASE_MODEL_NAME = "unsloth/Llama-3.2-1B-Instruct-bnb-4bit"
 DEFAULT_OUTPUT_DIR = "training_output"
 DEFAULT_DATA_DIR = "training_data"
-
 
 
 def iter_ndjson(path: Path) -> Iterable[Dict[str, Any]]:
@@ -108,44 +108,22 @@ def formatting_func(example):
     """
     Formats the dataset into the Llama-3 instruction format for the SFTTrainer.
     """
-    # Detect batched input
-    any_list = next((v for v in example.values() if isinstance(v, list)), None)
-    if any_list is not None:
-        batch_size = len(any_list)
-        prompts = example.get("prompt") or example.get("input") or [""] * batch_size
-        completions = example.get("completion") or example.get("output") or [""] * batch_size
-        texts = []
-        for p, c in zip(prompts, completions):
-            p = (p or "").strip()
-            c = (c or "").strip()
-            texts.append(
-                "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\n"
-                f"{p}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
-                f"{c}<|eot_id|>"
-            )
-
-        print(texts)
-        return texts
-    else:
-        prompt = example.get("prompt", "") or example.get("input", "")
-        completion = example.get("completion", "") or example.get("output", "")
-        text = (
+    p = (example.get("prompt") or "").strip()
+    c = (example.get("completion") or "").strip()
+    return {
+        "text": (
             "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\n"
-            f"{(prompt or '').strip()}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
-            f"{(completion or '').strip()}<|eot_id|>"
+            f"{p}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+            f"{c}<|eot_id|>"
         )
+    }
 
-
-        print([text])
-        return [text]
 
 def get_model_and_tokenizer(model_dir: str, train_data_path: str = None, retrain: bool = False):
     """
     Loads an existing fine-tuned model from `model_dir` if available.
     Otherwise, trains a new one using `train_data_path`.
     """
-    from unsloth import FastLanguageModel
-
     model_exists = os.path.exists(os.path.join(model_dir, "adapter_config.json"))
     should_train = retrain or not model_exists
 
@@ -165,6 +143,7 @@ def get_model_and_tokenizer(model_dir: str, train_data_path: str = None, retrain
             load_in_8bit = False,
             load_in_16bit = False,
         )
+        tokenizer.pad_token = tokenizer.eos_token
 
         model = FastLanguageModel.get_peft_model(
             model,
@@ -182,23 +161,25 @@ def get_model_and_tokenizer(model_dir: str, train_data_path: str = None, retrain
         )
 
         dataset = load_dataset("json", data_files=train_data_path, split="train")
+        dataset = dataset.map(formatting_func)
 
         trainer = SFTTrainer(
             model = model,
-            train_dataset = dataset,
             tokenizer = tokenizer,
-            formatting_func = formatting_func,
+            train_dataset = dataset,
+            dataset_text_field = "text",
+            max_seq_length = MAX_SEQ_LENGTH,
             args = SFTConfig(
-                max_seq_length = MAX_SEQ_LENGTH,
                 per_device_train_batch_size = 2,
                 gradient_accumulation_steps = 4,
                 warmup_steps = 10,
-                max_steps = 1000,
+                max_steps = 5000,
                 logging_steps = 1,
                 output_dir = model_dir,
                 optim = "adamw_8bit",
                 seed = 3407,
-                completion_only_loss=False
+                bf16=False,
+                fp16=False,
             ),
         )
         

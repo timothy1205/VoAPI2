@@ -798,15 +798,16 @@ def candidate_api_extraction(api_template_list, use_securebert=False, use_llama3
 
     elif use_llama3:
         print("Using Llama3 for candidate API extraction.")
-        model, tokenizer = get_model_and_tokenizer(model_dir="training_output")
+        model, tokenizer = get_model_and_tokenizer(model_dir="training_output", train_data_path="./endpoint_cve_dataset.jsonl")
         
         for api_template in api_template_list:
             prompt = (
-                "Extract the CVE identifier, CWE identifiers and any endpoints mentioned "
-                "from the following vulnerability description. Return only JSON.\n\n"
-                "Description:\n"
+                "From the given API endpoint and method, determine the relevant CWE IDs \n"
+                "that could be associated with it. Return nothing else but the result as JSON with 'cwe_ids' as the key.\n"
+                "If no CWE IDs are relevant, return an empty list.\n\n"
+                "For each CWE ID in the list ensure it is formated as 'CWE-XXX', where XXX is the CWE number.\n\n"
+
                 f"API Endpoint: {api_template.api_method} {api_template.api_url}\n\n"
-                "JSON:"
             )
             response_str = generate_response(model, tokenizer, prompt)
             try:
