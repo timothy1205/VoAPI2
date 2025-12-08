@@ -12,3 +12,5 @@ tokenizers
 torch
 accelerate
 unsloth
+matplotlib-venn
+upsetplot
