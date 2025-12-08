@@ -803,46 +803,39 @@ def candidate_api_extraction(api_template_list, use_securebert=False, use_llama3
         for api_template in api_template_list:
             prompt = (
                 "From the given API endpoint and method, determine the relevant CWE IDs \n"
-                "that could be associated with it. Return nothing else but the result as JSON with 'cwe_ids' as the key.\n"
-                "If no CWE IDs are relevant, return an empty list.\n\n"
-                "For each CWE ID in the list ensure it is formated as 'CWE-XXX', where XXX is the CWE number.\n\n"
+                "that could be associated with it. Return nothing else but the CWE IDs.\n"
+                "If no CWE IDs are relevant, return nothing.\n"
+                "For each CWE ID, ensure it is formated as 'CWE-XXX', where XXX is the CWE number.\n"
+                f"The available CWE IDs are: {list(CWEtoApiFunc.keys())}\n\n"
 
                 f"API Endpoint: {api_template.api_method} {api_template.api_url}\n\n"
             )
             response_str = generate_response(model, tokenizer, prompt)
-            try:
-                response_json = json.loads(response_str)
-                cwe_ids = response_json.get("cwe_ids", [])
-                if cwe_ids:
-                    request_dict = copy.deepcopy(api_template.api_request)
-                    del request_dict["path"]
-                    request_params = get_consumers_or_producers(request_dict)
-                    string_params = [p for p, t in request_params.items() if t == "String"]
-                    
-                    if string_params:
-                        test_types = {}
-                        for cwe in cwe_ids:
-                            if cwe in CWEtoApiFunc:
-                                api_func = CWEtoApiFunc[cwe]
-                                if api_func not in test_types:
-                                    test_types[api_func] = []
-                                test_types[api_func].extend(string_params)
-                        
-                        for api_func in test_types:
-                            test_types[api_func] = list(set(test_types[api_func]))
+            
+            # Use regex to find all CWE IDs in the format CWE-XXX (1-3 digits)
+            cwe_ids = re.findall(r'CWE-\d{1,3}', response_str)
 
-                        if test_types:
-                            print(f"Llama3 found: {api_template.api_url} {api_template.api_method} {test_types}")
-                            # Avoid duplicates if also found by securebert
-                            found = False
-                            for cand_api, _ in candidate_api_list:
-                                if cand_api.api_url == api_template.api_url and cand_api.api_method == api_template.api_method:
-                                    found = True
-                                    break
-                            if not found:
-                                candidate_api_list.append([api_template, test_types])
-            except (json.JSONDecodeError, TypeError):
-                continue
+            if cwe_ids:
+                request_dict = copy.deepcopy(api_template.api_request)
+                del request_dict["path"]
+                request_params = get_consumers_or_producers(request_dict)
+                string_params = [p for p, t in request_params.items() if t == "String"]
+                
+                if string_params:
+                    test_types = {}
+                    for cwe in cwe_ids:
+                        if cwe in CWEtoApiFunc:
+                            api_func = CWEtoApiFunc[cwe]
+                            if api_func not in test_types:
+                                test_types[api_func] = []
+                            test_types[api_func].extend(string_params)
+                    
+                    for api_func in test_types:
+                        test_types[api_func] = list(set(test_types[api_func]))
+
+                    if test_types:
+                        print(f"Llama3 found: {api_template.api_url} {api_template.api_method} {test_types}")
+                        candidate_api_list.append([api_template, test_types])
 
     else:
         # Original keyword-based extraction

@@ -382,3 +382,195 @@ Failed API Request: {
   },
   "body": {}
 }
+-------- VoAPI Unfinished Sequence --------
+Candidate API Url: /Artists/AlbumArtists
+Candidate API Method: Get
+Candidate API Seq: Get /Artists  -->  Get /Artists/AlbumArtists
+Failed API: Get /Artists
+Failed API Request: {
+  "path": {},
+  "header": {},
+  "query": {
+    "minCommunityRating": [
+      4.51,
+      "VoAPI_RANDOM"
+    ],
+    "startIndex": [
+      25,
+      "VoAPI_RANDOM"
+    ],
+    "limit": [
+      23,
+      "VoAPI_RANDOM"
+    ],
+    "searchTerm": [
+      "VoAPITestString7",
+      "VoAPI_RANDOM"
+    ],
+    "parentId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d25",
+      "VoAPI_RANDOM"
+    ],
+    "fields": [
+      "Array",
+      [
+        "AirTime",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "excludeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString10",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "includeItemTypes": [
+      "Array",
+      [
+        "VoAPITestString5",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "filters": [
+      "Array",
+      [
+        "IsFolder",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "isFavorite": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "mediaTypes": [
+      "Array",
+      [
+        "VoAPITestString16",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "genres": [
+      "Array",
+      [
+        "VoAPITestString40",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "genreIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d40",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "officialRatings": [
+      "Array",
+      [
+        "VoAPITestString35",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "tags": [
+      "Array",
+      [
+        "VoAPITestString28",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "years": [
+      "Array",
+      [
+        29,
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "enableUserData": [
+      false,
+      "VoAPI_RANDOM"
+    ],
+    "imageTypeLimit": [
+      43,
+      "VoAPI_RANDOM"
+    ],
+    "enableImageTypes": [
+      "Array",
+      [
+        "Primary",
+        "VoAPI_SPECIFICATION"
+      ],
+      false
+    ],
+    "person": [
+      "VoAPITestString33",
+      "VoAPI_RANDOM"
+    ],
+    "personIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d26",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "personTypes": [
+      "Array",
+      [
+        "VoAPITestString30",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "studios": [
+      "Array",
+      [
+        "VoAPITestString9",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "studioIds": [
+      "Array",
+      [
+        "566048da-ed19-4cd3-8e0a-b7e0e1ec4d28",
+        "VoAPI_RANDOM"
+      ],
+      false
+    ],
+    "userId": [
+      "566048da-ed19-4cd3-8e0a-b7e0e1ec4d26",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWithOrGreater": [
+      "VoAPITestString17",
+      "VoAPI_RANDOM"
+    ],
+    "nameStartsWith": [
+      "VoAPITestString13",
+      "VoAPI_RANDOM"
+    ],
+    "nameLessThan": [
+      "VoAPITestString5",
+      "VoAPI_RANDOM"
+    ],
+    "enableImages": [
+      true,
+      "VoAPI_RANDOM"
+    ],
+    "enableTotalRecordCount": [
+      false,
+      "VoAPI_RANDOM"
+    ]
+  },
+  "body": {}
+}

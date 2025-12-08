@@ -229,7 +229,7 @@ def candidate_apis_test(baseurl, header_dict, param_dict, output_dir, api_templa
 #     api_response = {'bodyResponse': {}, 'headerResponse': {}}
 #     return [ApiTemplate(api_url, api_method, api_request, api_response)]
 
-def api_func_statistics(candidate_api_list):
+def api_func_statistics(candidate_api_list, output_file):
     APIClassificationDict = {}
     for api_func in ApiFuncList:
         APIClassificationDict[api_func] = []
@@ -239,7 +239,7 @@ def api_func_statistics(candidate_api_list):
         for api_func in candidate_api_test_types.keys():
             APIClassificationDict[api_func].append([candidate_api_template.api_url, candidate_api_template.api_method])
     result = json.dumps(APIClassificationDict, indent=2)
-    f = open("APIClassificationDict.txt", "w")
+    f = open(output_file, "w")
     f.write(result)
     f.close()
 
@@ -264,6 +264,7 @@ def main():
     parser.add_argument('--securebert', action="store_true", help='Use securebert for parsing candidate apis, Default: False')
     parser.add_argument('--llama3', action="store_true", help='Use llama3 for parsing candidate apis, Default: False')
     parser.add_argument('--extract_only', action="store_true", help='Only extract API candidates then stop, Default: False')
+    parser.add_argument('--api_classification_output', help='Output file for API classification statistics', type=str, default='./APIClassificationDict.txt', required=False)
     #parser.add_argument('--no_vul_oriented', action="store_true", help='No Need for a Vulnerability-oriented Mechanism., Default: False')
     args = parser.parse_args()
     #start_log_str = "----------------VoAPI Start: " + time.asctime() + "-----------------------\n"
@@ -353,7 +354,7 @@ def main():
         candidate_api_list = add_candidate_api_list + candidate_api_list
     
     if (args.extract_only):
-        api_func_statistics(candidate_api_list)
+        api_func_statistics(candidate_api_list, args.api_classification_output)
         end_log_str = "----------------VoAPI End" + "-----------------------\n"
         write_log(log_file, end_log_str)
         return
