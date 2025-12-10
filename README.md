@@ -1,4 +1,4 @@
-# VoAPI2
+# VoAPI2 
 
 A vulnerability-oriented API inspection framework designed to directly expose vulnerabilities in RESTful APIs, based on our observation that the type of vulnerability hidden in an API interface is strongly associated with its functionality.
 
